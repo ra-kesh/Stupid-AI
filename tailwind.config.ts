@@ -19,6 +19,10 @@ const config = {
     },
     extend: {
       colors: {
+        sidebar: {
+          DEFAULT: 'hsl(var(--sidebar-background))',
+          hover:'hsl(var(--sidebar-hover))'
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
