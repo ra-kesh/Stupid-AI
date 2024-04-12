@@ -23,6 +23,7 @@ const config = {
           DEFAULT: 'hsl(var(--sidebar-background))',
           hover:'hsl(var(--sidebar-hover))'
         },
+        separator: "hsl(var(--separator))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
