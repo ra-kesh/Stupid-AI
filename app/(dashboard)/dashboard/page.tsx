@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import DashboardHero from "./dashboard-hero";
 
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
-  )
-}
+    <div className="flex flex-1 flex-col lg:gap-y-8 w-full">
+      <DashboardHero />
+    </div>
+  );
+};
 
-export default Dashboard
+export default Dashboard;
