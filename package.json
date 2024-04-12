@@ -13,6 +13,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-separator": "^1.0.3",
     "@tailwindcss/typography": "^0.5.12",
     "@total-typescript/ts-reset": "^0.5.1",
     "class-variance-authority": "^0.7.0",
