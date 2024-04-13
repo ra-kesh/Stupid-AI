@@ -1,85 +1,62 @@
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight, ImagePlus } from "lucide-react";
-import React from "react";
+import React from "react"
+import Image from "next/image"
+import { ArrowRight, ImagePlus } from "lucide-react"
+
+import { Avatar, AvatarFallback } from "@/components/ui/avatar"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+
+import generateImageSvg from "/public/generate_image_v1.svg"
 
 const DashboardHero = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-12 w-full gap-x-4 py-8">
-      <div className="lg:col-span-9 flex flex-col w-full h-full">
+    <div className="grid w-full grid-cols-1 gap-x-4 py-8 lg:grid-cols-12">
+      <div className="flex size-full flex-col lg:col-span-9">
         <div className="flex w-full items-center justify-between">
-          <h2 className="text-4xl font-bold tracking-wider text-logo">
-            Welcome to CupidAI
-          </h2>
+          <h2 className="text-logo text-4xl font-bold tracking-wider">Welcome to CupidAI</h2>
           <div className="flex items-center space-x-2 ">
-            <Avatar className=" h-10 w-10 sm:flex border border-separator">
-              <AvatarFallback className="bg-button text-logo">
-                {" "}
-                +5
-              </AvatarFallback>
+            <Avatar className=" h-10 w-10 border border-separator sm:flex">
+              <AvatarFallback className="text-logo bg-button"> +5</AvatarFallback>
             </Avatar>
 
-            <Button className="gap-x-4 rounded-3xl h-11 bg-button border border-separator">
+            <Button className="h-11 gap-x-4 rounded-3xl border border-separator bg-button">
               <ImagePlus />
               Invite Member
             </Button>
           </div>
         </div>
-        <div className="w-full flex  flex-row justify-between overflow-scroll mt-auto">
-          <Button className="gap-x-4 rounded-3xl h-11 bg-button border border-separator ">
-            {/* <Image
-              src={generateImageSvg}
-              alt="generate an image"
-              className="w-5 h-5"
-            /> */}
-            <span className="text-textforeground text-xs font-normal">
-              Images Generated: 531
-            </span>
+        <div className="mt-auto flex  w-full flex-row space-x-4 overflow-scroll">
+          <Button className="h-11 flex-auto  rounded-3xl border border-separator bg-button xl:gap-x-4">
+            <Image src={generateImageSvg} alt="generate an image" className="hidden size-5 2xl:block" />
+            <span className="text-textforeground text-xs font-normal">Images Generated: 531</span>
           </Button>
-          <Button className="gap-x-4 rounded-3xl h-11 bg-button border border-separator">
-            {/* <Image
-              src={addReactionSvg}
-              alt="generate an image"
-              className="w-5 h-5"
-            /> */}
-            <span className="text-textforeground text-xs font-normal">
-              Deepfakes generated: 842
-            </span>
+          <Button className="h-11 flex-auto gap-x-4 rounded-3xl border border-separator bg-button">
+            <Image src={generateImageSvg} alt="generate an image" className="hidden size-5 2xl:block" />
+            <span className="text-textforeground text-xs font-normal">Deepfakes generated: 842</span>
           </Button>
-          <Button className="gap-x-4 rounded-3xl h-11 bg-button border border-separator">
-            {/* <Image
-              src={newReleasesSvg}
-              alt="generate an image"
-              className="w-5 h-5"
-            /> */}
-            <span className="text-textforeground text-xs font-normal">
-              AI Verifications generated:141
-            </span>
+          <Button className="h-11 flex-auto gap-x-4 rounded-3xl border border-separator bg-button">
+            <Image src={generateImageSvg} alt="generate an image" className="hidden size-5 2xl:block" />
+            <span className="text-textforeground text-xs font-normal">AI Verifications generated:141</span>
           </Button>
-          <Button className="gap-x-4 rounded-3xl h-11 bg-button border border-separator">
-            {/* <Image
-              src={pageInfoSvg}
-              alt="generate an image"
-              className="w-5 h-5"
-            /> */}
-            <span className="text-textforeground text-xs font-normal">
-              Content Utilities used: 353
-            </span>
+          <Button className="h-11 flex-auto gap-x-2 rounded-3xl border border-separator bg-button  xl:gap-x-4">
+            <Image src={generateImageSvg} alt="generate an image" className="hidden size-5 2xl:block" />
+            <span className="text-textforeground text-xs font-normal">Content Utilities used: 353</span>
+          </Button>
+          <Button className="hidden h-11 flex-auto gap-x-4 rounded-3xl border border-separator bg-button 2xl:flex">
+            <Image src={generateImageSvg} alt="generate an image" className="hidden size-5 2xl:block" />
+            <span className="text-textforeground text-xs font-normal">Content Utilities used: 353</span>
           </Button>
         </div>
       </div>
       <div className="lg:col-span-3 ">
-        <Card className="bg-gradient-to-bl from-[#7f04e3] to-[#ff006b] border-none space-y-2">
+        <Card className="space-y-2 border-none bg-gradient-to-bl from-[#7f04e3] to-[#ff006b]">
           <CardHeader className="flex flex-row items-center justify-between pb-0">
-            <CardTitle className="lg:text-lg font-medium leading-7 text-primary tracking-wide pb-0">
+            <CardTitle className="pb-0 font-medium leading-7 tracking-wide text-primary lg:text-lg">
               Upgrade your plan
             </CardTitle>
           </CardHeader>
-          <CardContent className="flex flex-row w-full justify-between pr-0">
-            <p className="lg:text-[12px] text-foreground ">
-              Enjoy the power of AI with one of our paid plans
-            </p>
+          <CardContent className="flex w-full flex-row justify-between pr-0">
+            <p className="text-foreground lg:text-[12px] ">Enjoy the power of AI with one of our paid plans</p>
             <Button variant={"ghost"} className="hover:bg-inherit">
               <ArrowRight className="text-primary " />
             </Button>
@@ -87,7 +64,7 @@ const DashboardHero = () => {
         </Card>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default DashboardHero;
+export default DashboardHero

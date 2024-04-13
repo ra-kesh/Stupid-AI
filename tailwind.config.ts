@@ -24,6 +24,7 @@ const config = {
           hover:'hsl(var(--sidebar-hover))'
         },
         separator: "hsl(var(--separator))",
+        button: "hsl(var(--button))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
