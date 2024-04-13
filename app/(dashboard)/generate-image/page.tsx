@@ -22,6 +22,11 @@ const GenerateImage = () => {
           <Image src={imagegeneration} alt="generated image" className="lg:col-span-1" />
 
           <Image src={imagegeneration} alt="generated image" className="lg:col-span-1" />
+          <Image src={imagegeneration} alt="generated image" className="lg:col-span-1" />
+
+          <Image src={imagegeneration} alt="generated image" className="lg:col-span-1" />
+
+          <Image src={imagegeneration} alt="generated image" className="lg:col-span-1" />
         </CardContent>
       </Card>
       <Card className=" bg-inherit lg:col-span-3">
