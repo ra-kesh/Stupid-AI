@@ -2,12 +2,7 @@ import type { Config } from "tailwindcss"
 
 const config = {
   darkMode: ["class"],
-  content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
   prefix: "",
   theme: {
     container: {
@@ -20,15 +15,17 @@ const config = {
     extend: {
       colors: {
         sidebar: {
-          DEFAULT: 'hsl(var(--sidebar-background))',
-          hover:'hsl(var(--sidebar-hover))'
+          DEFAULT: "hsl(var(--sidebar-background))",
+          hover: "hsl(var(--sidebar-hover))",
         },
         separator: "hsl(var(--separator))",
         button: "hsl(var(--button))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
+        background: {
+          DEFAULT: "hsl(var(--background))",
+        },
         foreground: "hsl(var(--foreground))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
@@ -37,6 +34,8 @@ const config = {
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
+          background: "hsl(var(--secondary-background))",
+          hover: "hsl(var(--secondary-hover))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -80,7 +79,7 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"),require("@tailwindcss/typography")],
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 } satisfies Config
 
 export default config
