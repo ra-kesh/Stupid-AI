@@ -19,28 +19,34 @@ const ImageGenerationForm = () => {
         <form onSubmit={form.handleSubmit(() => {})} className="space-y-8">
           <FormField
             control={form.control}
-            name="username"
+            name="text-prompt"
             render={({ field }) => (
-              <FormItem className="col-span-2">
-                <FormLabel>Username</FormLabel>
+              <FormItem>
+                <FormLabel>Generate image using text prompt</FormLabel>
                 <FormControl>
-                  <Textarea placeholder="shadcn" {...field} className="border-none" />
+                  <Textarea placeholder="placeholder" {...field} className="border-none bg-card" />
                 </FormControl>
-                <FormDescription>This is your public display name.</FormDescription>
+                {/* <FormDescription>This is your public display name.</FormDescription> */}
                 <FormMessage />
               </FormItem>
             )}
           />
           <FormField
             control={form.control}
-            name="username"
+            name="sample-step"
             render={({ field }) => (
-              <FormItem className="lg:col-span-2">
+              <FormItem>
                 <FormLabel>Sampling steps</FormLabel>
                 <FormControl>
-                  <Slider defaultValue={[33]} max={100} step={1} onChange={field.onChange} />
+                  <Slider
+                    defaultValue={[33]}
+                    max={100}
+                    step={1}
+                    onChange={field.onChange}
+                    className="bg-gradient-to-bl from-[#7f04e3] to-[#ff006b]"
+                  />
                 </FormControl>
-                <FormDescription>This is your public display name.</FormDescription>
+                {/* <FormDescription>This is your public display name.</FormDescription> */}
                 <FormMessage />
               </FormItem>
             )}
@@ -50,30 +56,18 @@ const ImageGenerationForm = () => {
             name="type"
             render={({ field }) => (
               <FormItem className="space-y-3">
-                <FormLabel>Notify me about...</FormLabel>
+                <FormLabel>Sampling Method</FormLabel>
                 <FormControl>
                   <RadioGroup
                     onValueChange={field.onChange}
                     defaultValue={field.value}
-                    className="flex flex-col space-y-1"
+                    className="flex flex-row space-x-1"
                   >
-                    <FormItem className="flex items-center space-x-3 space-y-0">
+                    <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card px-3 py-2">
                       <FormControl>
                         <RadioGroupItem value="all" />
                       </FormControl>
-                      <FormLabel className="font-normal">All new messages</FormLabel>
-                    </FormItem>
-                    <FormItem className="flex items-center space-x-3 space-y-0">
-                      <FormControl>
-                        <RadioGroupItem value="mentions" />
-                      </FormControl>
-                      <FormLabel className="font-normal">Direct messages and mentions</FormLabel>
-                    </FormItem>
-                    <FormItem className="flex items-center space-x-3 space-y-0">
-                      <FormControl>
-                        <RadioGroupItem value="none" />
-                      </FormControl>
-                      <FormLabel className="font-normal">Nothing</FormLabel>
+                      <FormLabel className="font-normal">DDIM</FormLabel>
                     </FormItem>
                   </RadioGroup>
                 </FormControl>

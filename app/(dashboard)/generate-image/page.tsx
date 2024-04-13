@@ -26,7 +26,7 @@ const GenerateImage = () => {
       </Card>
       <Card className=" bg-inherit lg:col-span-3">
         <CardHeader className="px-0 text-2xl font-medium">AI Image Generation</CardHeader>
-        <CardContent className=" gap-4 rounded-xl bg-card p-6 ">
+        <CardContent className="gap-4 rounded-xl bg-form p-6 ">
           <ImageGenerationForm />
         </CardContent>
       </Card>
