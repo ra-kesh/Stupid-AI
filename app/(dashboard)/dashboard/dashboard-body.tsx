@@ -13,7 +13,7 @@ import generateImageSvg from "/public/generate_image_v1.svg"
 const DashboardBody = () => {
   return (
     // eslint-disable-next-line tailwindcss/classnames-order
-    <div className="bg-secondary-background flex flex-col space-y-6 rounded-xl p-6">
+    <div className="bg-secondary-background flex flex-col space-y-6 rounded-3xl p-6">
       <div className="grid grid-cols-1 gap-x-4 lg:grid-cols-4">
         <Card className="rounded-3xl border-0 bg-gradient-to-bl from-[#7f04e3] to-[#ff006b] p-[1.5px] lg:col-span-1">
           <div className="h-full rounded-[calc(1.5rem-1.5px)] bg-card ">
@@ -94,7 +94,7 @@ const DashboardBody = () => {
       </div>
       <div className="grid gap-4 md:grid-cols-7 md:gap-8 ">
         <Card className="border-0 bg-inherit md:col-span-5">
-          <CardHeader className="flex flex-row items-center justify-between">
+          <CardHeader className="flex flex-row items-center justify-between px-0">
             <div className="flex flex-row items-center gap-x-2">
               <Button className="hover:bg-hover bg-card px-1 py-2">
                 <ChevronLeft className="text-logo size-8 " />
@@ -111,10 +111,8 @@ const DashboardBody = () => {
               </Button>
             </div>
           </CardHeader>
-          <div className="px-6">
-            <Separator className="h-[2px] bg-separator" />
-          </div>
-          <CardContent>
+          <Separator className="h-[2px] bg-separator" />
+          <CardContent className="px-0">
             <Table>
               <TableHeader>
                 <TableRow className="border-none hover:bg-inherit">

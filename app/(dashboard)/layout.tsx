@@ -21,7 +21,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
     <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
       <aside className="hidden flex-col bg-sidebar md:flex md:w-[220px] lg:w-[280px]">
         <div className="hidden md:fixed md:inset-y-0 md:z-50 md:flex md:w-[220px] md:flex-col lg:w-[280px]">
-          <div className="flex h-14 items-center  px-4 lg:h-[60px] lg:px-6">
+          <div className="flex h-14 items-center  px-4 lg:h-[60px] lg:px-8">
             <Link href="/" className="flex items-center gap-2 font-semibold">
               <Image src={logo} alt="logo" className="size-6" />
               <span className="text-2xl font-bold leading-9 tracking-wider text-primary">CupidAI</span>
