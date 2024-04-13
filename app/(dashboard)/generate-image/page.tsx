@@ -3,6 +3,7 @@ import Image from "next/image"
 
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 
+import HistoryTable from "./_component/HistoryTable"
 import ImageGenerationForm from "./_component/ImageGenerationForm"
 import imagegeneration from "/public/image_generation_v1.png"
 
@@ -35,6 +36,7 @@ const GenerateImage = () => {
           <ImageGenerationForm />
         </CardContent>
       </Card>
+      <HistoryTable />
     </div>
   )
 }
