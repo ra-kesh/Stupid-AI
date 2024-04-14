@@ -25,17 +25,17 @@ const DashboardNav = ({ firstItemsSet, secondItemsSet, thirdItemsSet }: Dashboar
             <Link
               href={item.href}
               className={cn(
-                "group flex items-center gap-3 rounded-r-3xl text-foreground transition-all hover:bg-sidebar-hover lg:px-6  lg:py-3 ",
+                "2x:px-8 3xl:px-10 group flex items-center gap-3 rounded-r-3xl text-foreground transition-all hover:bg-sidebar-hover lg:px-6 lg:py-3 xl:px-7 ",
                 path === item.href ? "bg-sidebar-hover" : "null"
               )}
             >
               {item.icon}
-              <span className="lg:text-sm">{item.name}</span>
+              <span className="3xl:text-lg 4xl:text-xl lg:text-sm xl:text-base">{item.name}</span>
             </Link>
           </li>
         ))}
       </ul>
-      <Separator className="bg-separator lg:h-[1px]" />
+      <Separator className="3xl:h-[2px] bg-separator lg:h-px" />
       <ul className="grid items-start text-base font-medium lg:gap-y-3 ">
         {/* <div className="p-3 text-base font-semibold tracking-wider  ">Inventory</div> */}
         {secondItemsSet.map((item) => (
@@ -43,17 +43,17 @@ const DashboardNav = ({ firstItemsSet, secondItemsSet, thirdItemsSet }: Dashboar
             <Link
               href={item.href}
               className={cn(
-                "group flex items-center gap-3 rounded-r-3xl text-foreground transition-all hover:bg-sidebar-hover lg:px-6  lg:py-3 ",
+                "2x:px-8 3xl:px-10 group flex items-center gap-3 rounded-r-3xl text-foreground transition-all hover:bg-sidebar-hover lg:px-6 lg:py-3 xl:px-7 ",
                 path === item.href ? "bg-sidebar-hover" : "null"
               )}
             >
               {item.icon}
-              <span className="lg:text-sm">{item.name}</span>
+              <span className="3xl:text-lg 4xl:text-xl lg:text-sm xl:text-base">{item.name}</span>
             </Link>
           </li>
         ))}
       </ul>
-      <Separator className="bg-separator lg:h-[1px]" />
+      <Separator className="3xl:h-[2px] bg-separator lg:h-px" />
       <ul className="grid items-start text-base font-medium lg:gap-y-3 ">
         {/* <div className="p-3 text-sm font-semibold tracking-wider ">Operation</div> */}
         {thirdItemsSet.map((item) => (
@@ -61,12 +61,12 @@ const DashboardNav = ({ firstItemsSet, secondItemsSet, thirdItemsSet }: Dashboar
             <Link
               href={item.href}
               className={cn(
-                "group flex items-center gap-3 rounded-r-3xl text-foreground transition-all hover:bg-sidebar-hover lg:px-6  lg:py-3 ",
+                "2x:px-8 3xl:px-10 group flex items-center gap-3 rounded-r-3xl text-foreground transition-all hover:bg-sidebar-hover lg:px-6 lg:py-3 xl:px-7 ",
                 path === item.href ? "bg-sidebar-hover" : "null"
               )}
             >
               {item.icon}
-              <span className="lg:text-sm">{item.name}</span>
+              <span className="3xl:text-lg 4xl:text-xl lg:text-sm xl:text-base">{item.name}</span>
             </Link>
           </li>
         ))}
