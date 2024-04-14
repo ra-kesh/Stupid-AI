@@ -14,13 +14,13 @@ const DashboardHero = () => {
         <div className="flex w-full items-center justify-between">
           <h2 className="text-logo font-bold tracking-wider lg:text-2xl xl:text-4xl">Welcome to CupidAI</h2>
           <div className="flex items-center space-x-2 ">
-            <div className="flex items-center justify-center rounded-full border border-separator lg:size-6">
-              <span className="lg:text-xs">+5</span>
+            <div className="flex items-center justify-center rounded-full border border-separator bg-button lg:size-6">
+              <span className="text-foreground lg:text-xs">+5</span>
             </div>
 
-            <Button className=" rounded-3xl border border-separator bg-button  lg:h-8 lg:gap-x-2 lg:px-3">
+            <Button className=" rounded-3xl border border-separator bg-button lg:h-8 lg:gap-x-2 lg:px-3">
               <ImagePlus className="lg:size-4" />
-              <span className="lg:text-xs"> Invite Member</span>
+              <span className="text-foreground lg:text-xs"> Invite Member</span>
             </Button>
           </div>
         </div>
