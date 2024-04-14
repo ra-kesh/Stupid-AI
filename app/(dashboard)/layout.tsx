@@ -18,13 +18,15 @@ interface DashboardLayoutProps {
 
 export default function DashboardLayout({ children }: DashboardLayoutProps) {
   return (
-    <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[240px_1fr]">
-      <aside className="hidden flex-col bg-sidebar md:flex md:w-[220px] lg:w-[280px]">
-        <div className="hidden md:fixed md:inset-y-0 md:z-50 md:flex md:w-[220px] md:flex-col lg:w-[240px]">
-          <div className="flex h-14 items-center  px-4 lg:h-[60px] lg:px-6">
+    <div className="3xl:grid-cols-[300px_1fr] 4xl:grid-cols-[320px_1fr] grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[240px_1fr] xl:grid-cols-[260px_1fr] 2xl:grid-cols-[280px_1fr]">
+      <aside className="3xl:w-[300px] 4xl:w-[320px] hidden flex-col bg-sidebar md:flex md:w-[220px] lg:w-[240px] xl:w-[260px] 2xl:w-[280px]">
+        <div className="3xl:w-[300px] 4xl:w-[320px] hidden md:fixed md:inset-y-0 md:z-50 md:flex md:w-[220px] md:flex-col lg:w-[240px] xl:w-[260px]">
+          <div className="3xl:h-[100px] flex h-14  items-center px-4 lg:h-[60px] lg:px-6 xl:h-[70px] 2xl:h-[80px]">
             <Link href="/" className="flex items-center gap-2 font-semibold">
-              <Image src={logo} alt="logo" className="size-6" />
-              <span className="font-bold leading-9 tracking-wider text-primary lg:text-xl">CupidAI</span>
+              <Image src={logo} alt="logo" className="3xl:size-8 size-6 xl:size-7" />
+              <span className="3xl:text-3xl font-bold leading-9 tracking-wider text-primary lg:text-xl xl:text-2xl">
+                CupidAI
+              </span>
             </Link>
           </div>
           <DashboardNav
