@@ -12,76 +12,108 @@ import generateImageSvg from "/public/generate_image_v1.svg"
 
 const DashboardBody = () => {
   return (
-    <div className="flex flex-col space-y-6 rounded-3xl bg-secondary-background lg:p-4">
-      <div className="grid grid-cols-1 lg:grid-cols-4 lg:gap-x-3">
+    <div className="flex flex-col space-y-6 rounded-3xl bg-secondary-background lg:p-4 xl:p-6">
+      <div className="4xl:gap-x-6 grid grid-cols-1 lg:grid-cols-4 lg:gap-x-3 2xl:gap-x-4">
         <Card className="rounded-3xl border-0 bg-gradient-to-bl from-[#7f04e3] to-[#ff006b] p-[1.5px] lg:col-span-1">
           <div className="h-full rounded-[calc(1.5rem-1.5px)] bg-card">
-            <CardHeader className="flex flex-row items-center justify-between lg:p-4 lg:pb-0">
-              <CardTitle className="flex flex-row items-center lg:gap-x-3">
-                <Image src={generateImageSvg} alt="generate an image" className="lg:size-6" />
-                <span className="text-logo font-medium lg:text-sm lg:leading-5">Generate an Image</span>
+            <CardHeader className="4xl:p-12 4xl:pb-0 flex flex-row items-center justify-between lg:p-4 lg:pb-0 xl:p-6 xl:pb-0 2xl:p-8 2xl:pb-0">
+              <CardTitle className="4xl:gap-x-8 flex flex-row items-center lg:gap-x-3 xl:gap-x-5 2xl:gap-x-6">
+                <Image
+                  src={generateImageSvg}
+                  alt="generate an image"
+                  className="4xl:size-14 lg:size-6 xl:size-8 2xl:size-10"
+                />
+                <span className="text-logo 4xl:text-5xl font-medium lg:text-sm lg:leading-5 xl:text-2xl 2xl:text-3xl">
+                  Generate an Image
+                </span>
               </CardTitle>
             </CardHeader>
-            <CardContent className="flex flex-col lg:p-4 lg:pt-0">
-              <span className="font-normal tracking-wider text-foreground lg:py-3 lg:text-[10px] lg:leading-3">
+            <CardContent className="4xl:p-12 4xl:pt-0 flex flex-col lg:p-4 lg:pt-0 xl:p-6 xl:pt-0 2xl:p-8 2xl:pt-0">
+              <span className="4xl:text-lg font-normal tracking-wider text-foreground lg:py-4 lg:text-[9px] lg:leading-3 xl:py-5 xl:text-xs xl:leading-5 2xl:py-6 2xl:text-sm">
                 Quickly generate AI images with our powerful AI tools
               </span>
-              <Button className="border border-separator bg-button lg:h-8 lg:w-28 lg:rounded-2xl">
-                <span className="font-normal text-foreground lg:text-[10px]">Generate Image</span>
+              <Button className="4xl:py-8 4xl:rounded-full 4xl:w-52 border border-separator bg-button lg:h-8 lg:w-28 lg:rounded-2xl xl:w-40 xl:rounded-full xl:py-5 2xl:py-6">
+                <span className="4xl:text-base font-normal text-foreground lg:text-[10px] xl:text-sm">
+                  Generate Image
+                </span>
               </Button>
             </CardContent>
           </div>
         </Card>
         <Card className="rounded-3xl border-0 bg-gradient-to-bl from-[#7f04e3] to-[#ff006b] p-[1.5px] lg:col-span-1">
           <div className="h-full rounded-[calc(1.5rem-1.5px)] bg-card">
-            <CardHeader className="flex flex-row items-center justify-between lg:p-4 lg:pb-0">
-              <CardTitle className="flex flex-row items-center lg:gap-x-3">
-                <Image src={generateImageSvg} alt="generate an image" className="lg:size-6" />
-                <span className="text-logo font-medium lg:text-sm lg:leading-5">Generate an Image</span>
+            <CardHeader className="4xl:p-12 4xl:pb-0 flex flex-row items-center justify-between lg:p-4 lg:pb-0 xl:p-6 xl:pb-0 2xl:p-8 2xl:pb-0">
+              <CardTitle className="4xl:gap-x-8 flex flex-row items-center lg:gap-x-3 xl:gap-x-5 2xl:gap-x-6">
+                <Image
+                  src={generateImageSvg}
+                  alt="generate an image"
+                  className="4xl:size-14 lg:size-6 xl:size-8 2xl:size-10"
+                />
+                <span className="text-logo 4xl:text-5xl font-medium lg:text-sm lg:leading-5 xl:text-2xl 2xl:text-3xl">
+                  Generate an Image
+                </span>
               </CardTitle>
             </CardHeader>
-            <CardContent className="flex flex-col lg:p-4 lg:pt-0">
-              <span className="font-normal tracking-wider text-foreground lg:py-3 lg:text-[10px] lg:leading-3">
+            <CardContent className="4xl:p-12 4xl:pt-0 flex flex-col lg:p-4 lg:pt-0 xl:p-6 xl:pt-0 2xl:p-8 2xl:pt-0">
+              <span className="4xl:text-lg font-normal tracking-wider text-foreground lg:py-4 lg:text-[9px] lg:leading-3 xl:py-5 xl:text-xs xl:leading-5 2xl:py-6 2xl:text-sm">
                 Quickly generate AI images with our powerful AI tools
               </span>
-              <Button className="border border-separator bg-button lg:h-8 lg:w-28 lg:rounded-2xl">
-                <span className="font-normal text-foreground lg:text-[10px]">Generate Image</span>
+              <Button className="4xl:py-8 4xl:rounded-full 4xl:w-52 border border-separator bg-button lg:h-8 lg:w-28 lg:rounded-2xl xl:w-40 xl:rounded-full xl:py-5 2xl:py-6">
+                <span className="4xl:text-base font-normal text-foreground lg:text-[10px] xl:text-sm">
+                  Generate Image
+                </span>
               </Button>
             </CardContent>
           </div>
         </Card>
         <Card className="rounded-3xl border-0 bg-gradient-to-bl from-[#7f04e3] to-[#ff006b] p-[1.5px] lg:col-span-1">
           <div className="h-full rounded-[calc(1.5rem-1.5px)] bg-card">
-            <CardHeader className="flex flex-row items-center justify-between lg:p-4 lg:pb-0">
-              <CardTitle className="flex flex-row items-center lg:gap-x-3">
-                <Image src={generateImageSvg} alt="generate an image" className="lg:size-6" />
-                <span className="text-logo font-medium lg:text-sm lg:leading-5">Generate an Image</span>
+            <CardHeader className="4xl:p-12 4xl:pb-0 flex flex-row items-center justify-between lg:p-4 lg:pb-0 xl:p-6 xl:pb-0 2xl:p-8 2xl:pb-0">
+              <CardTitle className="4xl:gap-x-8 flex flex-row items-center lg:gap-x-3 xl:gap-x-5 2xl:gap-x-6">
+                <Image
+                  src={generateImageSvg}
+                  alt="generate an image"
+                  className="4xl:size-14 lg:size-6 xl:size-8 2xl:size-10"
+                />
+                <span className="text-logo 4xl:text-5xl font-medium lg:text-sm lg:leading-5 xl:text-2xl 2xl:text-3xl">
+                  Generate an Image
+                </span>
               </CardTitle>
             </CardHeader>
-            <CardContent className="flex flex-col lg:p-4 lg:pt-0">
-              <span className="font-normal tracking-wider text-foreground lg:py-3 lg:text-[10px] lg:leading-3">
+            <CardContent className="4xl:p-12 4xl:pt-0 flex flex-col lg:p-4 lg:pt-0 xl:p-6 xl:pt-0 2xl:p-8 2xl:pt-0">
+              <span className="4xl:text-lg font-normal tracking-wider text-foreground lg:py-4 lg:text-[9px] lg:leading-3 xl:py-5 xl:text-xs xl:leading-5 2xl:py-6 2xl:text-sm">
                 Quickly generate AI images with our powerful AI tools
               </span>
-              <Button className="border border-separator bg-button lg:h-8 lg:w-28 lg:rounded-2xl">
-                <span className="font-normal text-foreground lg:text-[10px]">Generate Image</span>
+              <Button className="4xl:py-8 4xl:rounded-full 4xl:w-52 border border-separator bg-button lg:h-8 lg:w-28 lg:rounded-2xl xl:w-40 xl:rounded-full xl:py-5 2xl:py-6">
+                <span className="4xl:text-base font-normal text-foreground lg:text-[10px] xl:text-sm">
+                  Generate Image
+                </span>
               </Button>
             </CardContent>
           </div>
         </Card>
         <Card className="rounded-3xl border-0 bg-gradient-to-bl from-[#7f04e3] to-[#ff006b] p-[1.5px] lg:col-span-1">
           <div className="h-full rounded-[calc(1.5rem-1.5px)] bg-card">
-            <CardHeader className="flex flex-row items-center justify-between lg:p-4 lg:pb-0">
-              <CardTitle className="flex flex-row items-center lg:gap-x-3">
-                <Image src={generateImageSvg} alt="generate an image" className="lg:size-6" />
-                <span className="text-logo font-medium lg:text-sm lg:leading-5">Generate an Image</span>
+            <CardHeader className="4xl:p-12 4xl:pb-0 flex flex-row items-center justify-between lg:p-4 lg:pb-0 xl:p-6 xl:pb-0 2xl:p-8 2xl:pb-0">
+              <CardTitle className="4xl:gap-x-8 flex flex-row items-center lg:gap-x-3 xl:gap-x-5 2xl:gap-x-6">
+                <Image
+                  src={generateImageSvg}
+                  alt="generate an image"
+                  className="4xl:size-14 lg:size-6 xl:size-8 2xl:size-10"
+                />
+                <span className="text-logo 4xl:text-5xl font-medium lg:text-sm lg:leading-5 xl:text-2xl 2xl:text-3xl">
+                  Generate an Image
+                </span>
               </CardTitle>
             </CardHeader>
-            <CardContent className="flex flex-col lg:p-4 lg:pt-0">
-              <span className="font-normal tracking-wider text-foreground lg:py-3 lg:text-[10px] lg:leading-3">
+            <CardContent className="4xl:p-12 4xl:pt-0 flex flex-col lg:p-4 lg:pt-0 xl:p-6 xl:pt-0 2xl:p-8 2xl:pt-0">
+              <span className="4xl:text-lg font-normal tracking-wider text-foreground lg:py-4 lg:text-[9px] lg:leading-3 xl:py-5 xl:text-xs xl:leading-5 2xl:py-6 2xl:text-sm">
                 Quickly generate AI images with our powerful AI tools
               </span>
-              <Button className="border border-separator bg-button lg:h-8 lg:w-28 lg:rounded-2xl">
-                <span className="font-normal text-foreground lg:text-[10px]">Generate Image</span>
+              <Button className="4xl:py-8 4xl:rounded-full 4xl:w-52 border border-separator bg-button lg:h-8 lg:w-28 lg:rounded-2xl xl:w-40 xl:rounded-full xl:py-5 2xl:py-6">
+                <span className="4xl:text-base font-normal text-foreground lg:text-[10px] xl:text-sm">
+                  Generate Image
+                </span>
               </Button>
             </CardContent>
           </div>
@@ -90,19 +122,21 @@ const DashboardBody = () => {
       <div className="grid gap-4 lg:grid-cols-7 lg:gap-x-4 ">
         <Card className="border-0 bg-inherit lg:col-span-5">
           <CardHeader className="flex flex-row items-center justify-between px-0">
-            <div className="flex flex-row items-center lg:gap-x-1">
-              <Button className="hover:bg-hover bg-card lg:p-2">
-                <ChevronLeft className="text-logo lg:size-6 " />
+            <div className="4xl:gap-x-4 flex flex-row items-center lg:gap-x-1">
+              <Button className="hover:bg-hover 4xl:p-6 bg-card lg:p-2 ">
+                <ChevronLeft className="text-logo 4xl:size-10 lg:size-6" />
               </Button>
-              <CardTitle className="text-logo font-bold tracking-wide lg:text-xl lg:leading-6">Billing</CardTitle>
+              <CardTitle className="text-logo 4xl:text-4xl font-bold tracking-wide lg:text-xl lg:leading-6 xl:text-2xl 2xl:text-3xl">
+                Billing
+              </CardTitle>
             </div>
-            <div className="flex flex-row items-center lg:gap-x-1">
-              <Button className="gap-x-2 bg-gradient-to-bl from-[#7f04e3] to-[#ff006b] px-3">
-                <FolderDown className="text-logo size-6" />
-                Download
+            <div className="4xl:gap-x-4 flex flex-row items-center lg:gap-x-1">
+              <Button className="4xl:px-8 4xl:py-7 xl:rounded-xs gap-x-2 bg-gradient-to-bl from-[#7f04e3] to-[#ff006b] px-3 xl:p-5">
+                <FolderDown className="text-logo 4xl:size-8 size-6 " />
+                <span className="4xl:text-lg xl:text-base">Download</span>
               </Button>
-              <Button className="hover:bg-hover bg-card lg:p-2">
-                <ChevronRight className="text-logo lg:size-6 " />
+              <Button className="hover:bg-hover 4xl:p-6 bg-card lg:p-2">
+                <ChevronRight className="text-logo 4xl:size-10 lg:size-6" />
               </Button>
             </div>
           </CardHeader>
@@ -154,7 +188,9 @@ const DashboardBody = () => {
           </CardContent>
         </Card>
         <Card className="flex flex-col border-none bg-inherit lg:col-span-2">
-          <CardTitle className="text-logo py-8 font-bold leading-7 tracking-wide lg:text-xl">News</CardTitle>
+          <CardTitle className="text-logo 4xl:text-4xl py-8 font-bold tracking-wide lg:text-xl lg:leading-6 xl:text-2xl 2xl:text-3xl">
+            News
+          </CardTitle>
           <CardContent className="p-0">
             <Accordion type="single" collapsible className="w-full  lg:space-y-2">
               <AccordionItem value="item-1 " className="border-none bg-card px-6 py-2 lg:rounded-3xl">
