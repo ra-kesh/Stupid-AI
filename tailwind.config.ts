@@ -13,6 +13,10 @@ const config = {
       },
     },
     extend: {
+      screens: {
+        "3xl": "1800px",
+        "4xl": "2200px",
+      },
       colors: {
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
