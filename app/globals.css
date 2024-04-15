@@ -15,7 +15,11 @@
     --sidebar-background: 0, 0%, 6%, 1;
     --sidebar-hover: 0, 0%, 11%, 1;
 
+    --form: 0, 0%, 6%, 1;
     --card: 0, 0%, 9%, 1;
+
+    --slider: 0, 0%, 17%, 1;
+
     /* --card-foreground: 240 10% 3.9%; */
 
     --popover: 0 0% 100%;
@@ -39,7 +43,7 @@
     --destructive-foreground: 0 0% 98%;
 
     --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
+    --input: 0, 0%, 20%, 1;
     --ring: 240 10% 3.9%;
 
     --radius: 1rem;

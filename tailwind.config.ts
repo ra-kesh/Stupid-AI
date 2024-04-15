@@ -18,6 +18,8 @@ const config = {
         "4xl": "2200px",
       },
       colors: {
+        form: "hsl(var(--form))",
+        slider: "hsl(var(--slider))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           hover: "hsl(var(--sidebar-hover))",
