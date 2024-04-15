@@ -2,6 +2,7 @@
 
 import React, { useState } from "react"
 
+import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 
 import { images } from "../page"
@@ -18,15 +19,20 @@ const Preview = () => {
   })
 
   return (
-    <Card className="bg-inherit lg:col-span-5">
-      <CardHeader className="px-0 text-2xl font-medium">Preview</CardHeader>
-      <CardContent className=" w-full px-0">
+    <Card className="bg-inherit lg:col-span-5 ">
+      <CardHeader className="px-0 text-2xl font-medium 2xl:text-3xl 4xl:text-4xl">Preview</CardHeader>
+      <CardContent className=" w-full px-0 ">
         {selectedImage.url ? (
           <div className="space-y-2">
-            <div className="mx-auto rounded-t-lg bg-form p-6">
+            <div className="mx-auto rounded-t-lg bg-form p-6 4xl:rounded-t-3xl 4xl:p-10">
               <img src={selectedImage.url} alt="selected image " className="w-full rounded-t-lg" />
+              <div className="flex w-full justify-center 4xl:pt-10">
+                <Button className="m-auto bg-gradient-to-bl from-[#7f04e3] to-[#ff006b] 4xl:h-20 4xl:rounded-3xl 4xl:px-24 4xl:text-2xl">
+                  Download
+                </Button>
+              </div>
             </div>
-            <div className="rounded-b-lg bg-form py-6">
+            <div className="rounded-b-lg bg-form py-6 4xl:rounded-b-3xl">
               <CarouselComponent images={images} setSelectedImage={setSelectedImage} />
             </div>
           </div>
