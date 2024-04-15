@@ -13,7 +13,7 @@ const ImageGrid = ({
   setSelectedImage: any
 }) => {
   return (
-    <div className="grid grid-cols-1 gap-4 rounded-xl bg-form p-6 lg:grid-cols-2 xl:grid-cols-3 4xl:rounded-3xl 4xl:p-10">
+    <div className="grid grid-cols-1 gap-4 rounded-xl bg-form lg:grid-cols-2 lg:p-3 xl:grid-cols-3 xl:p-5 4xl:rounded-3xl 4xl:p-10 ">
       {images?.map((image: any) => (
         <div className="group relative lg:col-span-1" key={image.id}>
           <img src={image.url} alt="generated image" className="size-full rounded-xl" />
