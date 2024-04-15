@@ -13,6 +13,10 @@ const config = {
       },
     },
     extend: {
+      screens: {
+        "3xl": "1800px",
+        "4xl": "2200px",
+      },
       colors: {
         form: "hsl(var(--form))",
         slider: "hsl(var(--slider))",
