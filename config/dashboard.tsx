@@ -7,11 +7,11 @@ export const dashboardConfig: DashboardConfig = {
   ai: [
     { name: "Generate Image", href: "/generate-image", icon: <ImageIcon className="size-5 xl:size-7 3xl:size-8" /> },
     { name: "Deep Fakes", href: "/content-deepfake", icon: <Smile className="size-5 xl:size-7 3xl:size-8" /> },
-    {
-      name: "Content Utilities",
-      href: "/content-utilities",
-      icon: <Settings2 className="size-5 xl:size-7 3xl:size-8" />,
-    },
+    // {
+    //   name: "Content Utilities",
+    //   href: "/content-utilities",
+    //   icon: <Settings2 className="size-5 xl:size-7 3xl:size-8" />,
+    // },
     {
       name: "AI verification",
       href: "/ai-verification",
