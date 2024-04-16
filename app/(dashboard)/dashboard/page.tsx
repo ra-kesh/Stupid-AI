@@ -5,7 +5,7 @@ import DashboardHero from "./dashboard-hero"
 
 const Dashboard = () => {
   return (
-    <div className="flex w-full flex-1 flex-col lg:gap-y-6">
+    <div className="flex   w-full flex-1 flex-col lg:gap-y-6">
       <DashboardHero />
       <DashboardBody />
     </div>
