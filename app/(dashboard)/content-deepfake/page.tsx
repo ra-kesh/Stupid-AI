@@ -3,6 +3,7 @@ import React from "react"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 
 import DeepfakePreview from "./deepfake-preview"
+import DeepFakeForm from "./DeepFakeForm"
 
 const ContentDeepfake = () => {
   return (
@@ -17,7 +18,7 @@ const ContentDeepfake = () => {
       <Card className=" bg-inherit lg:col-span-7 ">
         <CardHeader className="px-0 text-2xl font-medium 2xl:text-3xl 4xl:text-4xl">AI Deepfake Generation</CardHeader>
         <CardContent className="gap-4 rounded-xl bg-form lg:p-3 xl:p-4  4xl:rounded-3xl 4xl:p-10">
-          {/* <ImageGenerationForm /> */}
+          <DeepFakeForm />
         </CardContent>
       </Card>
       {/* <HistoryTable /> */}
