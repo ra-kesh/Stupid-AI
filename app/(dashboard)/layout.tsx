@@ -38,7 +38,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
         <div className="flex w-full flex-1 flex-col overflow-hidden bg-background lg:px-6 3xl:px-14">
           <header className="2x flex h-14 items-center gap-4 lg:h-20 xl:h-28 2xl:h-32">
             <div className="flex w-full items-center  justify-end md:justify-between ">
-              <h2 className="text-logo font-light tracking-wider lg:text-3xl xl:text-4xl 2xl:text-[2.5rem] ">
+              <h2 className="text-logo font-light tracking-wider lg:text-3xl xl:text-4xl 2xl:text-[2.5rem] 4xl:text-5xl">
                 Dashboard
               </h2>
             </div>
