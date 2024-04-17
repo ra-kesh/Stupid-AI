@@ -207,29 +207,27 @@ export function FileUploader(props: FileUploaderProps) {
                     aria-hidden="true"
                   />
                 </div>
-                <p className="text-sm font-medium text-muted-foreground 2xl:text-base 4xl:text-lg">
-                  Drop the files here
-                </p>
+                <p className="text-xs font-medium text-muted-foreground 2xl:text-sm 4xl:text-xl">Drop the files here</p>
               </div>
             ) : (
               <div className="flex flex-col items-center justify-center sm:px-5 xl:gap-1">
-                <div className="rounded-full bg-slider p-3 2xl:p-5">
+                <div className="rounded-full bg-slider p-2 2xl:p-3 ">
                   <UploadCloud
-                    className="text-muted-foreground lg:size-4 xl:size-5 2xl:size-7 4xl:size-10"
+                    className="text-muted-foreground lg:size-4 xl:size-5 2xl:size-6 4xl:size-8"
                     aria-hidden="true"
                   />
                 </div>
                 <div className="space-y-px">
-                  <p className="text-sm font-medium text-muted-foreground 2xl:text-base 4xl:text-lg">
+                  <p className="text-xs font-medium text-muted-foreground 2xl:text-sm 4xl:text-xl">
                     Drag {`'n'`} drop files here, or click to select files
                   </p>
-                  <p className="text-xs text-muted-foreground/70 2xl:text-sm 4xl:text-base">
+                  {/* <p className="text-xs text-muted-foreground/70 2xl:text-sm 4xl:text-base">
                     You can upload
                     {maxFiles > 1
                       ? ` ${maxFiles === Infinity ? "multiple" : maxFiles}
                       files (up to ${formatBytes(maxSize)} each)`
                       : ` a file with ${formatBytes(maxSize)}`}
-                  </p>
+                  </p> */}
                 </div>
               </div>
             )}

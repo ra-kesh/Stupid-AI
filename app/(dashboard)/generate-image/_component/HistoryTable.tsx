@@ -5,7 +5,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 
 const HistoryTable = () => {
   return (
-    <Card className="col-span-8 border-0  bg-inherit">
+    <Card className=" border-0 bg-inherit  lg:col-span-12">
       <CardHeader className="flex flex-row items-center justify-between px-0 ">
         <CardTitle className="text-logo text-2xl font-bold leading-7 tracking-wide 2xl:text-3xl 4xl:text-4xl">
           History
@@ -15,10 +15,10 @@ const HistoryTable = () => {
         <Table>
           <TableHeader className="4xl:text-2xl">
             <TableRow className=" hover:bg-inherit 4xl:text-2xl">
-              <TableHead className="w-1/12 py-8 text-center ">Sr. No.</TableHead>
-              <TableHead className="w-7/12 py-8 ">Prompts</TableHead>
-              <TableHead className="w-3/12 py-8 ">Date & Time</TableHead>
-              <TableHead className="w-1/12 py-8 ">Action</TableHead>
+              <TableHead className="w-1/12 text-center xl:py-8">Sr. No.</TableHead>
+              <TableHead className="w-7/12 xl:py-8 ">Prompts</TableHead>
+              <TableHead className="w-3/12 xl:py-8 ">Date & Time</TableHead>
+              <TableHead className="w-1/12 xl:py-8 ">Action</TableHead>
             </TableRow>
           </TableHeader>
 

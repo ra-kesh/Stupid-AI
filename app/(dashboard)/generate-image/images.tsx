@@ -36,4 +36,17 @@ export const images = [
     id: 240,
     url: "/image_generation_v1.png",
   },
+  {
+    id: 290,
+    url: "/image_generation_6_v1.png",
+  },
+  {
+    id: 140,
+    url: "/image_generation_3_v1.png",
+  },
+
+  {
+    id: 9140,
+    url: "/image_generation_2_v1.png",
+  },
 ]
