@@ -9,7 +9,7 @@ import VerificationForm from "./VerificationForm"
 const AiVerification = () => {
   return (
     <div className="grid grid-cols-1 gap-x-4 lg:grid-cols-12 xl:gap-x-8 2xl:gap-x-10">
-      <div className="lg:col-span-8 xl:col-span-7">
+      <div className="col-span-7">
         <Card className="bg-inherit">
           <CardHeader className="px-0 text-lg font-medium lg:py-2 xl:py-3 xl:text-2xl 2xl:py-4 4xl:py-6 4xl:text-4xl">
             Preview
@@ -20,7 +20,7 @@ const AiVerification = () => {
         </Card>
       </div>
 
-      <Card className="bg-inherit lg:col-span-4 xl:col-span-5">
+      <Card className="col-span-5 bg-inherit">
         <CardHeader className="px-0 text-lg font-medium lg:py-2 xl:py-3 xl:text-2xl 2xl:py-4 4xl:py-6 4xl:text-4xl">
           Manage Account
         </CardHeader>

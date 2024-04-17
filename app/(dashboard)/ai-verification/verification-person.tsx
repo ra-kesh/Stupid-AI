@@ -3,7 +3,6 @@ import React from "react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ScrollArea } from "@/components/ui/scroll-area"
 
 import SettingsForm from "./SettingsForm"
@@ -11,125 +10,203 @@ import SettingsForm from "./SettingsForm"
 const VerificationPersons = () => {
   return (
     <div className="space-y-2">
-      <ScrollArea className="2xl:h-[27rem] ">
+      <ScrollArea className="lg:h-60 xl:h-80 2xl:h-[27rem]">
         {" "}
-        <div className="grid 2xl:gap-3">
-          <div className="flex items-center gap-4 border border-separator 2xl:rounded-xl 2xl:p-3">
-            <Avatar className="hidden sm:flex 2xl:size-12">
+        <div className="grid xl:gap-2 2xl:gap-3">
+          <div className="flex items-center gap-4 rounded-sm border border-separator p-2 xl:rounded-sm xl:p-2 2xl:rounded-xl 2xl:p-3 4xl:p-5">
+            <Avatar className="hidden sm:flex xl:size-10 2xl:size-12 4xl:size-14">
               <AvatarImage src="/verification-girl-v1.png" alt="Avatar" />
               <AvatarFallback>OM</AvatarFallback>
             </Avatar>
             <div className="grid gap-1">
-              <p className="text-xs font-medium leading-none">Account Verified Successfully</p>
-              <p className="text-xs text-muted-foreground">Healthy With 1400 likes, US Account</p>
+              <p className="font-medium leading-none lg:text-[8px] xl:text-xs 4xl:text-sm">
+                Account Verified Successfully
+              </p>
+              <p className="text-xs text-muted-foreground lg:text-[8px] 4xl:text-sm">
+                Healthy With 1400 likes, US Account
+              </p>
             </div>
             <div className="ml-auto font-medium">
-              <Button variant={"outline"} className=" 2xl:px-10">
+              <Button
+                variant={"outline"}
+                className="lg:h-8 lg:rounded-sm lg:px-3 lg:text-[8px] xl:px-5 xl:text-xs 2xl:px-8 2xl:py-5 4xl:py-6 4xl:text-sm"
+              >
                 Start
               </Button>
             </div>
           </div>
-          <div className="flex items-center gap-4 border border-separator 2xl:rounded-xl 2xl:p-3">
-            <Avatar className="hidden sm:flex 2xl:size-12">
+          <div className="flex items-center gap-4 rounded-sm border border-separator p-2 xl:rounded-sm xl:p-2 2xl:rounded-xl 2xl:p-3 4xl:p-5">
+            <Avatar className="hidden sm:flex xl:size-10 2xl:size-12 4xl:size-14">
               <AvatarImage src="/verification-girl-v1.png" alt="Avatar" />
               <AvatarFallback>OM</AvatarFallback>
             </Avatar>
             <div className="grid gap-1">
-              <p className="text-xs font-medium leading-none">Account Verified Successfully</p>
-              <p className="text-xs text-muted-foreground">Healthy With 1400 likes, US Account</p>
+              <p className="font-medium leading-none lg:text-[8px] xl:text-xs 4xl:text-sm">
+                Account Verified Successfully
+              </p>
+              <p className="text-xs text-muted-foreground lg:text-[8px] 4xl:text-sm">
+                Healthy With 1400 likes, US Account
+              </p>
             </div>
             <div className="ml-auto font-medium">
-              <Button variant={"outline"} className=" 2xl:px-10">
+              <Button
+                variant={"outline"}
+                className="lg:h-8 lg:rounded-sm lg:px-3 lg:text-[8px] xl:px-5 xl:text-xs 2xl:px-8 2xl:py-5 4xl:py-6 4xl:text-sm"
+              >
                 Start
               </Button>
             </div>
           </div>
-          <div className="flex items-center gap-4 border border-separator 2xl:rounded-xl 2xl:p-3">
-            <Avatar className="hidden sm:flex 2xl:size-12">
+          <div className="flex items-center gap-4 rounded-sm border border-separator p-2 xl:rounded-sm xl:p-2 2xl:rounded-xl 2xl:p-3 4xl:p-5">
+            <Avatar className="hidden sm:flex xl:size-10 2xl:size-12 4xl:size-14">
               <AvatarImage src="/verification-girl-v1.png" alt="Avatar" />
               <AvatarFallback>OM</AvatarFallback>
             </Avatar>
             <div className="grid gap-1">
-              <p className="text-xs font-medium leading-none">Account Verified Successfully</p>
-              <p className="text-xs text-muted-foreground">Healthy With 1400 likes, US Account</p>
+              <p className="font-medium leading-none lg:text-[8px] xl:text-xs 4xl:text-sm">
+                Account Verified Successfully
+              </p>
+              <p className="text-xs text-muted-foreground lg:text-[8px] 4xl:text-sm">
+                Healthy With 1400 likes, US Account
+              </p>
             </div>
             <div className="ml-auto font-medium">
-              <Button variant={"outline"} className=" 2xl:px-10">
+              <Button
+                variant={"outline"}
+                className="lg:h-8 lg:rounded-sm lg:px-3 lg:text-[8px] xl:px-5 xl:text-xs 2xl:px-8 2xl:py-5 4xl:py-6 4xl:text-sm"
+              >
                 Start
               </Button>
             </div>
           </div>
-          <div className="flex items-center gap-4 border border-separator 2xl:rounded-xl 2xl:p-3">
-            <Avatar className="hidden sm:flex 2xl:size-12">
+          <div className="flex items-center gap-4 rounded-sm border border-separator p-2 xl:rounded-sm xl:p-2 2xl:rounded-xl 2xl:p-3 4xl:p-5">
+            <Avatar className="hidden sm:flex xl:size-10 2xl:size-12 4xl:size-14">
               <AvatarImage src="/verification-girl-v1.png" alt="Avatar" />
               <AvatarFallback>OM</AvatarFallback>
             </Avatar>
             <div className="grid gap-1">
-              <p className="text-xs font-medium leading-none">Account Verified Successfully</p>
-              <p className="text-xs text-muted-foreground">Healthy With 1400 likes, US Account</p>
+              <p className="font-medium leading-none lg:text-[8px] xl:text-xs 4xl:text-sm">
+                Account Verified Successfully
+              </p>
+              <p className="text-xs text-muted-foreground lg:text-[8px] 4xl:text-sm">
+                Healthy With 1400 likes, US Account
+              </p>
             </div>
             <div className="ml-auto font-medium">
-              <Button variant={"outline"} className=" 2xl:px-10">
+              <Button
+                variant={"outline"}
+                className="lg:h-8 lg:rounded-sm lg:px-3 lg:text-[8px] xl:px-5 xl:text-xs 2xl:px-8 2xl:py-5 4xl:py-6 4xl:text-sm"
+              >
                 Start
               </Button>
             </div>
           </div>
-          <div className="flex items-center gap-4 border border-separator 2xl:rounded-xl 2xl:p-3">
-            <Avatar className="hidden sm:flex 2xl:size-12">
+          <div className="flex items-center gap-4 rounded-sm border border-separator p-2 xl:rounded-sm xl:p-2 2xl:rounded-xl 2xl:p-3 4xl:p-5">
+            <Avatar className="hidden sm:flex xl:size-10 2xl:size-12 4xl:size-14">
               <AvatarImage src="/verification-girl-v1.png" alt="Avatar" />
               <AvatarFallback>OM</AvatarFallback>
             </Avatar>
             <div className="grid gap-1">
-              <p className="text-xs font-medium leading-none">Account Verified Successfully</p>
-              <p className="text-xs text-muted-foreground">Healthy With 1400 likes, US Account</p>
+              <p className="font-medium leading-none lg:text-[8px] xl:text-xs 4xl:text-sm">
+                Account Verified Successfully
+              </p>
+              <p className="text-xs text-muted-foreground lg:text-[8px] 4xl:text-sm">
+                Healthy With 1400 likes, US Account
+              </p>
             </div>
             <div className="ml-auto font-medium">
-              <Button variant={"outline"} className=" 2xl:px-10">
+              <Button
+                variant={"outline"}
+                className="lg:h-8 lg:rounded-sm lg:px-3 lg:text-[8px] xl:px-5 xl:text-xs 2xl:px-8 2xl:py-5 4xl:py-6 4xl:text-sm"
+              >
                 Start
               </Button>
             </div>
           </div>
-          <div className="flex items-center gap-4 border border-separator 2xl:rounded-xl 2xl:p-3">
-            <Avatar className="hidden sm:flex 2xl:size-12">
+          <div className="flex items-center gap-4 rounded-sm border border-separator p-2 xl:rounded-sm xl:p-2 2xl:rounded-xl 2xl:p-3 4xl:p-5">
+            <Avatar className="hidden sm:flex xl:size-10 2xl:size-12 4xl:size-14">
               <AvatarImage src="/verification-girl-v1.png" alt="Avatar" />
               <AvatarFallback>OM</AvatarFallback>
             </Avatar>
             <div className="grid gap-1">
-              <p className="text-xs font-medium leading-none">Account Verified Successfully</p>
-              <p className="text-xs text-muted-foreground">Healthy With 1400 likes, US Account</p>
+              <p className="font-medium leading-none lg:text-[8px] xl:text-xs 4xl:text-sm">
+                Account Verified Successfully
+              </p>
+              <p className="text-xs text-muted-foreground lg:text-[8px] 4xl:text-sm">
+                Healthy With 1400 likes, US Account
+              </p>
             </div>
             <div className="ml-auto font-medium">
-              <Button variant={"outline"} className=" 2xl:px-10">
+              <Button
+                variant={"outline"}
+                className="lg:h-8 lg:rounded-sm lg:px-3 lg:text-[8px] xl:px-5 xl:text-xs 2xl:px-8 2xl:py-5 4xl:py-6 4xl:text-sm"
+              >
                 Start
               </Button>
             </div>
           </div>
-          <div className="flex items-center gap-4 border border-separator 2xl:rounded-xl 2xl:p-3">
-            <Avatar className="hidden sm:flex 2xl:size-12">
+          <div className="flex items-center gap-4 rounded-sm border border-separator p-2 xl:rounded-sm xl:p-2 2xl:rounded-xl 2xl:p-3 4xl:p-5">
+            <Avatar className="hidden sm:flex xl:size-10 2xl:size-12 4xl:size-14">
               <AvatarImage src="/verification-girl-v1.png" alt="Avatar" />
               <AvatarFallback>OM</AvatarFallback>
             </Avatar>
             <div className="grid gap-1">
-              <p className="text-xs font-medium leading-none">Account Verified Successfully</p>
-              <p className="text-xs text-muted-foreground">Healthy With 1400 likes, US Account</p>
+              <p className="font-medium leading-none lg:text-[8px] xl:text-xs 4xl:text-sm">
+                Account Verified Successfully
+              </p>
+              <p className="text-xs text-muted-foreground lg:text-[8px] 4xl:text-sm">
+                Healthy With 1400 likes, US Account
+              </p>
             </div>
             <div className="ml-auto font-medium">
-              <Button variant={"outline"} className=" 2xl:px-10">
+              <Button
+                variant={"outline"}
+                className="lg:h-8 lg:rounded-sm lg:px-3 lg:text-[8px] xl:px-5 xl:text-xs 2xl:px-8 2xl:py-5 4xl:py-6 4xl:text-sm"
+              >
                 Start
               </Button>
             </div>
           </div>
-          <div className="flex items-center gap-4 border border-separator 2xl:rounded-xl 2xl:p-3">
-            <Avatar className="hidden sm:flex 2xl:size-12">
+          <div className="flex items-center gap-4 rounded-sm border border-separator p-2 xl:rounded-sm xl:p-2 2xl:rounded-xl 2xl:p-3 4xl:p-5">
+            <Avatar className="hidden sm:flex xl:size-10 2xl:size-12 4xl:size-14">
               <AvatarImage src="/verification-girl-v1.png" alt="Avatar" />
               <AvatarFallback>OM</AvatarFallback>
             </Avatar>
             <div className="grid gap-1">
-              <p className="text-xs font-medium leading-none">Account Verified Successfully</p>
-              <p className="text-xs text-muted-foreground">Healthy With 1400 likes, US Account</p>
+              <p className="font-medium leading-none lg:text-[8px] xl:text-xs 4xl:text-sm">
+                Account Verified Successfully
+              </p>
+              <p className="text-xs text-muted-foreground lg:text-[8px] 4xl:text-sm">
+                Healthy With 1400 likes, US Account
+              </p>
             </div>
             <div className="ml-auto font-medium">
-              <Button variant={"outline"} className=" 2xl:px-10">
+              <Button
+                variant={"outline"}
+                className="lg:h-8 lg:rounded-sm lg:px-3 lg:text-[8px] xl:px-5 xl:text-xs 2xl:px-8 2xl:py-5 4xl:py-6 4xl:text-sm"
+              >
+                Start
+              </Button>
+            </div>
+          </div>
+          <div className="flex items-center gap-4 rounded-sm border border-separator p-2 xl:rounded-sm xl:p-2 2xl:rounded-xl 2xl:p-3 4xl:p-5">
+            <Avatar className="hidden sm:flex xl:size-10 2xl:size-12 4xl:size-14">
+              <AvatarImage src="/verification-girl-v1.png" alt="Avatar" />
+              <AvatarFallback>OM</AvatarFallback>
+            </Avatar>
+            <div className="grid gap-1">
+              <p className="font-medium leading-none lg:text-[8px] xl:text-xs 4xl:text-sm">
+                Account Verified Successfully
+              </p>
+              <p className="text-xs text-muted-foreground lg:text-[8px] 4xl:text-sm">
+                Healthy With 1400 likes, US Account
+              </p>
+            </div>
+            <div className="ml-auto font-medium">
+              <Button
+                variant={"outline"}
+                className="lg:h-8 lg:rounded-sm lg:px-3 lg:text-[8px] xl:px-5 xl:text-xs 2xl:px-8 2xl:py-5 4xl:py-6 4xl:text-sm"
+              >
                 Start
               </Button>
             </div>
