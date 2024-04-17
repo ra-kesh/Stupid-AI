@@ -28,7 +28,7 @@ const DashboardHero = () => {
         </div>
         <div
           className="mt-auto flex w-full flex-row justify-between 
-          overflow-hidden 3xl:space-x-3"
+          space-x-1 overflow-hidden 3xl:space-x-3"
         >
           <Button className="gap-x-2 rounded-full border border-separator bg-button lg:h-8 lg:p-3 xl:h-10 xl:px-5 4xl:h-14 4xl:gap-x-4 4xl:px-6 ">
             <Image src={generateImageSvg} alt="generate an image" className="lg:size-3 xl:size-5  4xl:size-7" />
