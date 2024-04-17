@@ -15,9 +15,9 @@ const ImageEditingForm = () => {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(() => {})}
-        className="grid  space-y-1 lg:space-y-2 2xl:space-y-3 2xl:p-4 4xl:space-y-7"
+        className="grid  space-y-1 lg:space-y-2 lg:p-4 2xl:space-y-3 2xl:p-5 4xl:space-y-7"
       >
-        <div className="grid grid-cols-3 gap-x-4 2xl:gap-y-4">
+        <div className="grid gap-x-4 lg:grid-cols-2 xl:grid-cols-3 2xl:gap-y-4">
           <FormField
             control={form.control}
             name="width"

@@ -17,14 +17,14 @@ const TextPromptForm = () => {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(() => {})}
-        className="col-span-8 space-y-1  lg:space-y-2 2xl:space-y-3 4xl:space-y-7"
+        className="space-y-1 lg:col-span-7 lg:space-y-2  xl:col-span-8 2xl:space-y-3 4xl:space-y-7"
       >
         <FormField
           control={form.control}
           name="text-prompt"
           render={({ field }) => (
             <FormItem className=" space-y-1 2xl:space-y-2 4xl:space-y-3">
-              <FormLabel className="text-xs text-muted-foreground 2xl:text-sm 4xl:text-xl">
+              <FormLabel className="text-muted-foreground lg:text-[9px] xl:text-xs 2xl:text-sm 4xl:text-xl ">
                 {" "}
                 Create ai image from text prompt{" "}
               </FormLabel>
@@ -56,7 +56,9 @@ const TextPromptForm = () => {
         <Separator className="bg-separator 2xl:h-[2px]" />
         <Accordion type="single" collapsible>
           <AccordionItem value="item-1" className="border-none">
-            <AccordionTrigger className="rounded-xl bg-card 2xl:p-5">Image Editing Settings</AccordionTrigger>
+            <AccordionTrigger className="rounded-xl bg-card lg:p-4 2xl:p-5 4xl:text-xl ">
+              Image Editing Settings
+            </AccordionTrigger>
             <AccordionContent className="rounded-b-xl bg-card">
               <ImageEditingForm />
             </AccordionContent>
