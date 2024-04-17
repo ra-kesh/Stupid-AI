@@ -16,7 +16,7 @@ const SettingsForm = () => {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(() => {})}
-        className="grid  space-y-1 lg:space-y-2 2xl:space-y-3 2xl:p-4 4xl:space-y-7"
+        className="grid  space-y-1 lg:space-y-2 lg:p-4 2xl:space-y-3 2xl:p-5 4xl:space-y-7"
       >
         <div className="flex flex-row gap-x-4 ">
           <FormField
@@ -24,7 +24,9 @@ const SettingsForm = () => {
             name="width"
             render={({ field }) => (
               <FormItem className="w-1/2 space-y-1 2xl:space-y-2 4xl:space-y-3">
-                <FormLabel className="text-xs 2xl:text-sm 4xl:text-xl">Verification Attempts</FormLabel>
+                <FormLabel className="lg:text-[9px] xl:text-xs 2xl:text-sm 4xl:text-xl">
+                  Verification Attempts
+                </FormLabel>
                 <FormControl>
                   <Input placeholder="100" {...field} className="border-none bg-form  4xl:h-14" />
                 </FormControl>
@@ -38,7 +40,7 @@ const SettingsForm = () => {
             name="height"
             render={({ field }) => (
               <FormItem className="w-1/2 space-y-1 2xl:space-y-2 4xl:space-y-3">
-                <FormLabel className="text-xs 2xl:text-sm 4xl:text-xl">Platform Verified On</FormLabel>
+                <FormLabel className="lg:text-[9px] xl:text-xs 2xl:text-sm 4xl:text-xl">Platform Verified On</FormLabel>
                 <FormControl>
                   <Input placeholder="100" {...field} className="border-none bg-form  4xl:h-14" />
                 </FormControl>
@@ -54,7 +56,7 @@ const SettingsForm = () => {
           name="height"
           render={({ field }) => (
             <FormItem className="w-full space-y-1  2xl:space-y-2 4xl:space-y-3">
-              <FormLabel className="text-xs 2xl:text-sm 4xl:text-xl">Verifier Name</FormLabel>
+              <FormLabel className="lg:text-[9px] xl:text-xs 2xl:text-sm 4xl:text-xl">Verifier Name</FormLabel>
               <FormControl>
                 <Input placeholder="100" {...field} className="border-none bg-form  4xl:h-14 " />
               </FormControl>
@@ -67,8 +69,8 @@ const SettingsForm = () => {
           control={form.control}
           name="height"
           render={({ field }) => (
-            <FormItem className="w-full space-y-1 2xl:space-y-2 4xl:space-y-3">
-              <FormLabel className="text-xs 2xl:text-sm 4xl:text-xl">Note</FormLabel>
+            <FormItem className="w-full space-y-1 2xl:space-y-2 4xl:space-y-3 ">
+              <FormLabel className="lg:text-[9px] xl:text-xs 2xl:text-sm 4xl:text-xl">Note</FormLabel>
               <FormControl>
                 <Textarea placeholder="100" {...field} className="border-none bg-form 4xl:h-14" />
               </FormControl>

@@ -215,13 +215,18 @@ const VerificationPersons = () => {
       </ScrollArea>
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1" className="border-none">
-          <AccordionTrigger className="rounded-xl bg-card 2xl:p-5">Settings</AccordionTrigger>
+          <AccordionTrigger className="rounded-xl bg-card lg:p-4 lg:text-sm xl:text-base 2xl:p-5 4xl:text-lg">
+            Settings
+          </AccordionTrigger>
           <AccordionContent className="rounded-b-xl bg-card">
             <SettingsForm />
           </AccordionContent>
         </AccordionItem>
       </Accordion>
-      <Button className="w-full bg-button " variant={"outline"}>
+      <Button
+        className="w-full bg-button lg:text-[9px] xl:text-xs 2xl:text-sm 4xl:py-8 4xl:text-lg"
+        variant={"outline"}
+      >
         Download Account Verification Settings
       </Button>
     </div>
