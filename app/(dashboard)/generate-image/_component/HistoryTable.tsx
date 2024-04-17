@@ -15,7 +15,7 @@ const HistoryTable = () => {
         <Table>
           <TableHeader className="4xl:text-2xl">
             <TableRow className=" hover:bg-inherit 4xl:text-2xl">
-              <TableHead className="w-1/12 text-center text-xs xl:py-8">Sr. No.</TableHead>
+              <TableHead className="w-1/12 text-center xl:py-8">Sr. No.</TableHead>
               <TableHead className="w-7/12 xl:py-8 ">Prompts</TableHead>
               <TableHead className="w-3/12 xl:py-8 ">Date & Time</TableHead>
               <TableHead className="w-1/12 xl:py-8 ">Action</TableHead>
