@@ -20,7 +20,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
         {/* sidebar starts */}
         <aside className="hidden flex-col bg-sidebar md:flex md:w-[220px] lg:w-[240px] xl:w-[260px] 2xl:w-[280px] 3xl:w-[300px] 4xl:w-[320px]">
           <div className="hidden md:fixed md:inset-y-0 md:z-50 md:flex md:w-[220px] md:flex-col lg:w-[240px] xl:w-[260px] 3xl:w-[300px] 4xl:w-[320px]">
-            <div className="flex h-14 items-center  px-4 lg:h-20 lg:px-6 xl:h-28  xl:px-7 2xl:h-32  2xl:px-8   ">
+            <div className="flex h-14 items-center  px-4 lg:h-20 lg:px-6 xl:h-24 xl:px-7 2xl:h-32  2xl:px-8   ">
               <Link href="/" className="flex items-center gap-2 font-semibold">
                 <Image src={logo} alt="logo" className="size-6 xl:size-7 3xl:size-8" />
                 <span className="font-bold leading-9 tracking-wider text-primary lg:text-xl xl:text-2xl 3xl:text-3xl">
@@ -36,7 +36,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
           </div>
         </aside>
         <div className="flex w-full flex-1 flex-col overflow-hidden bg-background lg:px-6 3xl:px-14">
-          <header className="2x flex h-14 items-center gap-4 lg:h-20 xl:h-28 2xl:h-32">
+          <header className="2x flex h-14 items-center gap-4 lg:h-20 xl:h-24 2xl:h-32">
             <div className="flex w-full items-center  justify-end md:justify-between ">
               <h2 className="text-logo font-light tracking-wider lg:text-3xl xl:text-4xl 2xl:text-[2.5rem] 4xl:text-5xl">
                 Dashboard
