@@ -19,15 +19,17 @@ const Preview = () => {
   })
 
   return (
-    <Card className="bg-inherit lg:col-span-5 ">
-      <CardHeader className="px-0 text-2xl font-medium 2xl:text-3xl 4xl:text-4xl">Preview</CardHeader>
+    <Card className="bg-inherit lg:col-span-7">
+      <CardHeader className="px-0 text-lg font-medium lg:py-2 xl:py-3 xl:text-2xl 2xl:py-4 4xl:py-6 4xl:text-4xl">
+        Preview
+      </CardHeader>
       <CardContent className=" w-full px-0 ">
         {selectedImage.url ? (
           <div className="space-y-2">
             <div className="mx-auto rounded-t-lg bg-form lg:p-3 xl:p-4 4xl:rounded-t-3xl 4xl:p-10">
               <img src={selectedImage.url} alt="selected image " className="w-full rounded-t-lg" />
               <div className="flex w-full justify-center lg:pt-6 4xl:pt-10">
-                <Button className="4xl:h-18 m-auto bg-gradient-to-bl from-[#7f04e3] to-[#ff006b] lg:rounded-xl lg:px-8  2xl:h-12 2xl:px-16 4xl:rounded-3xl 4xl:px-24 4xl:text-2xl">
+                <Button className=" m-auto bg-gradient-to-bl from-[#7f04e3] to-[#ff006b] lg:rounded-xl lg:px-8  2xl:h-12 2xl:px-16 4xl:w-1/5 4xl:rounded-3xl 4xl:py-8 4xl:text-xl ">
                   Download
                 </Button>
               </div>
