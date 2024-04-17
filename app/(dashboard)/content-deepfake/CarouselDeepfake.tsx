@@ -4,7 +4,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 
 export const CarouselDeepFake = ({ images, setSelectedImage }: { images: any[]; setSelectedImage: any }) => {
   return (
-    <Carousel className="mx-auto lg:max-w-48 xl:max-w-xs  2xl:max-w-lg 4xl:max-w-3xl ">
+    <Carousel className="mx-auto lg:max-w-48 xl:max-w-xs  2xl:max-w-md 4xl:max-w-lg ">
       <CarouselContent className="-ml-1">
         {images.map((image, index) => {
           return (
