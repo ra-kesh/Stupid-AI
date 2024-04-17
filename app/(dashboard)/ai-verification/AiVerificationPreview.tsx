@@ -27,13 +27,22 @@ const AiPreview = () => {
             Download
           </Button>
           <div className="space-x-1 xl:space-x-2 2xl:space-x-4">
-            <Button variant={"outline"} className="border-separator bg-button ">
+            <Button
+              variant={"outline"}
+              className="border-separator bg-button  lg:h-8 lg:rounded-sm lg:text-[9px]  xl:h-10 xl:rounded-sm xl:text-xs 2xl:text-sm 4xl:h-16 4xl:text-lg"
+            >
               Isolate 1
             </Button>
-            <Button variant={"outline"} className="border-separator bg-button ">
+            <Button
+              variant={"outline"}
+              className="border-separator bg-button  lg:h-8 lg:rounded-sm lg:text-[9px]  xl:h-10 xl:rounded-sm xl:text-xs 2xl:text-sm 4xl:h-16 4xl:text-lg"
+            >
               Isolate 1
             </Button>
-            <Button variant={"outline"} className="border-separator bg-button ">
+            <Button
+              variant={"outline"}
+              className="border-separator bg-button  lg:h-8 lg:rounded-sm lg:text-[9px]  xl:h-10 xl:rounded-sm xl:text-xs 2xl:text-sm 4xl:h-16 4xl:text-lg"
+            >
               Isolate 1
             </Button>
           </div>
