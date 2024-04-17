@@ -15,8 +15,8 @@ const FaceSwapForm = () => {
   return (
     <Card className="lg:col-span-5 xl:col-span-4">
       <CardHeader>
-        <CardTitle className="lg:text-lg xl:text-xl">Face Swap</CardTitle>
-        <CardDescription className="lg:text-[9px] lg:leading-3 xl:text-xs xl:leading-4">
+        <CardTitle className="lg:text-lg xl:text-xl 4xl:text-3xl">Face Swap</CardTitle>
+        <CardDescription className="lg:text-[9px] lg:leading-3 xl:text-xs xl:leading-4 4xl:text-lg">
           Faceswap is independent of AI Verification, you can use this only after generation, it does not work before
           hand
         </CardDescription>

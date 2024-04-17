@@ -42,12 +42,12 @@ const TextPromptForm = () => {
         />
 
         <div className="flex lg:space-x-3 lg:py-4   4xl:space-x-6 4xl:py-6">
-          <Button className=" bg-gradient-to-bl from-[#7f04e3] to-[#ff006b] lg:rounded-xl lg:text-xs xl:px-8 xl:py-5 xl:text-sm 4xl:h-20 4xl:rounded-3xl 4xl:px-20 4xl:text-xl ">
+          <Button className=" bg-gradient-to-bl from-[#7f04e3] to-[#ff006b] lg:rounded-xl lg:text-xs xl:px-8 xl:py-5 xl:text-sm 4xl:h-20 4xl:rounded-3xl 4xl:px-14 4xl:text-xl ">
             Generate
           </Button>
           <Button
             variant={"outline"}
-            className=" bg-inherit lg:rounded-xl lg:px-3 lg:text-xs xl:px-6 xl:py-5 xl:text-sm 4xl:h-20 4xl:rounded-3xl 4xl:px-16 4xl:text-xl"
+            className=" bg-inherit lg:rounded-xl lg:px-3 lg:text-xs xl:px-6 xl:py-5 xl:text-sm 4xl:h-20 4xl:rounded-3xl 4xl:px-14 4xl:text-xl"
           >
             Cancel
           </Button>
@@ -56,7 +56,7 @@ const TextPromptForm = () => {
         <Separator className="bg-separator 2xl:h-[2px]" />
         <Accordion type="single" collapsible>
           <AccordionItem value="item-1" className="border-none">
-            <AccordionTrigger className="rounded-xl bg-card lg:p-4 2xl:p-5 4xl:text-xl ">
+            <AccordionTrigger className="rounded-xl bg-card lg:p-4 2xl:p-5 4xl:p-8 4xl:text-2xl">
               Image Editing Settings
             </AccordionTrigger>
             <AccordionContent className="rounded-b-xl bg-card">
