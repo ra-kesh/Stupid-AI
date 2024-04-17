@@ -12,7 +12,7 @@ const DashboardHero = () => {
     <div className="grid w-full grid-cols-1 py-8 lg:grid-cols-12 lg:gap-x-4 xl:gap-x-6 2xl:gap-x-10 4xl:gap-x-12">
       <div className="flex size-full flex-col lg:col-span-9">
         <div className="flex w-full items-center justify-between">
-          <h2 className="text-logo font-bold tracking-wider lg:text-2xl xl:text-4xl 2xl:text-[2.4rem] 4xl:text-5xl">
+          <h2 className="text-logo  font-bold tracking-wider md:text-3xl lg:text-2xl xl:text-4xl 2xl:text-[2.4rem] 4xl:text-5xl">
             Welcome to CupidAI
           </h2>
           <div className="flex items-center space-x-2 ">
