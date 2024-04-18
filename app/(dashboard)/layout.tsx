@@ -10,6 +10,7 @@ import { Separator } from "@/components/ui/separator"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
 import DashboardNav from "./_component/DashboardNav"
+import SidebarNav from "./_component/SidebarNav"
 import logo from "/public/logo_v1.svg"
 
 interface DashboardLayoutProps {
@@ -48,14 +49,15 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
                 <span className="sr-only">Toggle navigation menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="flex flex-col">
-              <DashboardNav
+            <SheetContent side="left" className="flex flex-col px-0">
+              <SidebarNav
                 firstItemsSet={dashboardConfig.main}
                 secondItemsSet={dashboardConfig.ai}
                 thirdItemsSet={dashboardConfig.account}
               />
             </SheetContent>
           </Sheet>
+
           <div className="flex w-full items-center  justify-end md:justify-between ">
             <h2 className="text-logo font-light tracking-wider md:text-3xl xl:text-4xl 2xl:text-[2.5rem] 4xl:text-5xl ">
               Dashboard

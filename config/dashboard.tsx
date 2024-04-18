@@ -4,7 +4,11 @@ import { CircleCheck, ImageIcon, LayoutGrid, Settings2, Smile, UserPlus2, Users,
 
 export const dashboardConfig: DashboardConfig = {
   main: [
-    { name: "Dashboard", href: "/dashboard", icon: <LayoutGrid className="size-6 lg:size-5 xl:size-7 3xl:size-8" /> },
+    {
+      name: "Dashboard",
+      href: "/dashboard",
+      icon: <LayoutGrid className="size-6 lg:size-5 xl:size-7 3xl:size-8" />,
+    },
   ],
   ai: [
     {
