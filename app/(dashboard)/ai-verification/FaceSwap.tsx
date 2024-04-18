@@ -15,8 +15,8 @@ const FaceSwapForm = () => {
   return (
     <Card className="lg:col-span-5 xl:col-span-4">
       <CardHeader>
-        <CardTitle className="lg:text-lg xl:text-xl 4xl:text-3xl">Face Swap</CardTitle>
-        <CardDescription className="lg:text-[9px] lg:leading-3 xl:text-xs xl:leading-4 4xl:text-lg">
+        <CardTitle className="text-lg xl:text-xl 4xl:text-3xl">Face Swap</CardTitle>
+        <CardDescription className="text-xs lg:text-[9px] lg:leading-3 xl:text-xs xl:leading-4 4xl:text-lg">
           Faceswap is independent of AI Verification, you can use this only after generation, it does not work before
           hand
         </CardDescription>
@@ -28,8 +28,8 @@ const FaceSwapForm = () => {
               control={form.control}
               name="source-files"
               render={({ field }) => (
-                <FormItem className="space-y-1 2xl:space-y-2 4xl:space-y-3">
-                  <FormLabel className="text-xs 2xl:text-sm 4xl:text-xl">Source File(s)</FormLabel>
+                <FormItem className="space-y-2 lg:space-y-1 2xl:space-y-2 4xl:space-y-3">
+                  <FormLabel className="text-sm lg:text-xs 2xl:text-sm 4xl:text-xl">Source File(s)</FormLabel>
                   <FormControl>
                     <FileUploader
                       value={field.value}
@@ -50,8 +50,8 @@ const FaceSwapForm = () => {
               control={form.control}
               name="target-files"
               render={({ field }) => (
-                <FormItem className="space-y-1 2xl:space-y-2 4xl:space-y-3">
-                  <FormLabel className="text-xs 2xl:text-sm 4xl:text-xl">Target File(s)</FormLabel>
+                <FormItem className="space-y-2 lg:space-y-1 2xl:space-y-2 4xl:space-y-3">
+                  <FormLabel className="text-sm lg:text-xs 2xl:text-sm 4xl:text-xl">Target File(s)</FormLabel>
                   <FormControl>
                     <FileUploader
                       value={field.value}

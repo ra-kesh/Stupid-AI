@@ -5,7 +5,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 
 const DeepFakeHistoryTable = () => {
   return (
-    <Card className="w-full border-0  bg-inherit">
+    <Card className="col-span-12 w-full border-0  bg-inherit">
       <CardHeader className="flex flex-row items-center justify-between px-0 ">
         <CardTitle className="text-logo text-2xl font-bold leading-7 tracking-wide 2xl:text-3xl 4xl:text-4xl">
           History

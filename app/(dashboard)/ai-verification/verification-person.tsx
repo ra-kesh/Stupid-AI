@@ -10,9 +10,9 @@ import SettingsForm from "./SettingsForm"
 const VerificationPersons = () => {
   return (
     <div className="space-y-2">
-      <ScrollArea className="lg:h-60 xl:h-80 2xl:h-[27rem]">
+      <ScrollArea className="h-80 lg:h-60 xl:h-80 2xl:h-[27rem]">
         {" "}
-        <div className="grid xl:gap-2 2xl:gap-3">
+        <div className="grid gap-2 2xl:gap-3">
           <div className="flex items-center gap-4 rounded-sm border border-separator p-2 xl:rounded-sm xl:p-2 2xl:rounded-xl 2xl:p-3 4xl:p-5">
             <Avatar className="hidden sm:flex xl:size-10 2xl:size-12 4xl:size-14">
               <AvatarImage src="/verification-girl-v1.png" alt="Avatar" />
@@ -215,7 +215,7 @@ const VerificationPersons = () => {
       </ScrollArea>
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1" className="border-none">
-          <AccordionTrigger className="rounded-xl bg-card lg:p-4 lg:text-sm xl:text-base 2xl:p-5 4xl:text-lg">
+          <AccordionTrigger className="rounded-xl bg-card p-6 lg:p-4 lg:text-sm xl:text-base 2xl:p-5 4xl:text-lg">
             Settings
           </AccordionTrigger>
           <AccordionContent className="rounded-b-xl bg-card">

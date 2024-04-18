@@ -10,7 +10,7 @@ import generateImageSvg from "/public/generate_image_v1.svg"
 
 const ContentDeepfake = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-x-4 xl:gap-x-8 2xl:gap-x-10">
+    <div className="grid grid-cols-12 lg:gap-x-4 xl:gap-x-8 2xl:gap-x-10">
       <div className="col-span-12 w-full lg:col-span-5">
         <Card className="bg-inherit">
           <CardHeader className="px-0 text-lg font-medium lg:py-2 xl:py-3 xl:text-2xl 2xl:py-4 4xl:py-6 4xl:text-4xl">
