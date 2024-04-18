@@ -4,13 +4,13 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 
 export const CarouselDeepFake = ({ images, setSelectedImage }: { images: any[]; setSelectedImage: any }) => {
   return (
-    <Carousel className="mx-auto lg:max-w-48 xl:max-w-xs  2xl:max-w-md 4xl:max-w-lg ">
+    <Carousel className="mx-auto max-w-36 sm:max-w-xs md:max-w-sm lg:max-w-40 xl:max-w-xs  2xl:max-w-md 4xl:max-w-lg">
       <CarouselContent className="-ml-1">
         {images.map((image, index) => {
           return (
             <CarouselItem
               key={index}
-              className="pl-1 md:basis-1/2 lg:basis-1/3  xl:basis-1/4 2xl:basis-1/5 "
+              className="basis-1/3 pl-1  lg:basis-1/3  xl:basis-1/4 4xl:basis-1/5"
               onClick={() => setSelectedImage(image)}
             >
               <div className="h-full p-1 ">

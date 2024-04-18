@@ -20,8 +20,8 @@ const DeepfakePreview = () => {
     <div className="space-y-2 ">
       <div className="mx-auto rounded-t-lg bg-form  4xl:rounded-t-3xl ">
         <img src={selectedImage.url} alt="selected image " className="w-full rounded-t-lg" />
-        <div className="flex w-full justify-center lg:py-6 4xl:pt-10">
-          <Button className=" m-auto bg-gradient-to-bl from-[#7f04e3] to-[#ff006b] lg:rounded-xl lg:px-8  2xl:h-10 2xl:px-10 4xl:w-1/5 4xl:rounded-3xl 4xl:py-8 4xl:text-xl ">
+        <div className="flex w-full justify-center py-6 4xl:pt-10">
+          <Button className=" m-auto bg-gradient-to-bl from-[#7f04e3] to-[#ff006b] px-8 lg:rounded-xl lg:px-8  2xl:h-10 2xl:px-10 4xl:w-1/5 4xl:rounded-3xl 4xl:py-8 4xl:text-xl ">
             Download
           </Button>
         </div>
