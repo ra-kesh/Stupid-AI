@@ -12,29 +12,29 @@ import generateImageSvg from "/public/generate_image_v1.svg"
 
 const DashboardBody = () => {
   return (
-    <div className="flex flex-col space-y-6 rounded-3xl bg-secondary-background md:max-lg:p-8 lg:p-4 xl:p-6 2xl:p-10 4xl:p-14">
+    <div className="flex flex-col space-y-6 rounded-3xl bg-secondary-background max-lg:p-8 lg:p-4 xl:p-6 2xl:p-10 4xl:p-14">
       {/* card container */}
-      <div className=" grid grid-cols-1 md:grid-cols-2  md:max-lg:gap-10 lg:grid-cols-4 lg:gap-x-6 xl:gap-x-8 2xl:gap-x-12 4xl:gap-x-20">
+      <div className=" grid grid-cols-1 gap-5  sm:grid-cols-2  md:max-lg:gap-10 lg:grid-cols-4 lg:gap-x-6 xl:gap-x-8 2xl:gap-x-12 4xl:gap-x-20">
         {/* card starts */}
         <Card className="rounded-3xl border-0 bg-gradient-to-bl from-[#7f04e3] to-[#ff006b] p-[1.5px] lg:col-span-1">
           <div className="h-full rounded-[calc(1.5rem-1.5px)] bg-card">
             <CardHeader className="flex flex-row items-center justify-between lg:p-4 lg:pb-0 xl:p-6 xl:pb-0 2xl:p-8 2xl:pb-0 4xl:p-12 4xl:pb-0">
-              <CardTitle className="flex flex-row items-center md:gap-x-5 lg:gap-x-3 xl:gap-x-5 2xl:gap-x-6 4xl:gap-x-8">
+              <CardTitle className="flex flex-row items-center gap-x-5 lg:gap-x-3 xl:gap-x-5 2xl:gap-x-6 4xl:gap-x-8">
                 <Image
                   src={generateImageSvg}
                   alt="generate an image"
-                  className="md:size-7 lg:size-6 xl:size-8 2xl:size-10 4xl:size-14"
+                  className="size-7 lg:size-6 xl:size-8 2xl:size-10 4xl:size-14"
                 />
-                <span className="text-logo font-medium md:text-xl lg:text-sm lg:leading-5 xl:text-lg 2xl:text-2xl 4xl:text-3xl">
+                <span className="text-logo text-xl font-medium lg:text-sm lg:leading-5 xl:text-lg 2xl:text-2xl 4xl:text-3xl">
                   Generate an Image
                 </span>
               </CardTitle>
             </CardHeader>
             <CardContent className="flex flex-col lg:p-4 lg:pt-0 xl:p-6 xl:pt-0 2xl:p-8 2xl:pt-0 4xl:p-12 4xl:pt-0">
-              <span className="font-normal tracking-wider text-foreground md:text-sm lg:py-4  lg:text-[.5rem] lg:leading-3 xl:py-5 xl:text-xs xl:leading-5  2xl:py-6 4xl:py-8 4xl:text-lg">
+              <span className="pb-5 text-xs font-normal tracking-wider text-foreground md:text-sm lg:py-4  lg:text-[.5rem] lg:leading-3 xl:py-5 xl:text-xs xl:leading-5  2xl:py-6 4xl:py-8 4xl:text-lg">
                 Quickly generate AI images with our powerful AI tools
               </span>
-              <Button className="border border-separator bg-button md:h-9 md:w-6/12 md:rounded-lg md:max-lg:mt-5 lg:h-8 lg:w-2/3 lg:rounded-full xl:h-10 4xl:h-14">
+              <Button className="h-9 w-6/12 rounded-lg border border-separator bg-button md:max-lg:mt-5 lg:h-8 lg:w-2/3 lg:rounded-full xl:h-10 4xl:h-14">
                 <span className="font-normal text-foreground md:text-xs lg:text-[.5rem] xl:text-xs 4xl:text-base">
                   Generate Image
                 </span>
@@ -45,22 +45,22 @@ const DashboardBody = () => {
         <Card className="rounded-3xl border-0 bg-gradient-to-bl from-[#7f04e3] to-[#ff006b] p-[1.5px] lg:col-span-1">
           <div className="h-full rounded-[calc(1.5rem-1.5px)] bg-card">
             <CardHeader className="flex flex-row items-center justify-between lg:p-4 lg:pb-0 xl:p-6 xl:pb-0 2xl:p-8 2xl:pb-0 4xl:p-12 4xl:pb-0">
-              <CardTitle className="flex flex-row items-center md:gap-x-5 lg:gap-x-3 xl:gap-x-5 2xl:gap-x-6 4xl:gap-x-8">
+              <CardTitle className="flex flex-row items-center gap-x-5 lg:gap-x-3 xl:gap-x-5 2xl:gap-x-6 4xl:gap-x-8">
                 <Image
                   src={generateImageSvg}
                   alt="generate an image"
-                  className="md:size-7 lg:size-6 xl:size-8 2xl:size-10 4xl:size-14"
+                  className="size-7 lg:size-6 xl:size-8 2xl:size-10 4xl:size-14"
                 />
-                <span className="text-logo font-medium md:text-xl lg:text-sm lg:leading-5 xl:text-lg 2xl:text-2xl 4xl:text-3xl">
+                <span className="text-logo text-xl font-medium lg:text-sm lg:leading-5 xl:text-lg 2xl:text-2xl 4xl:text-3xl">
                   Generate an Image
                 </span>
               </CardTitle>
             </CardHeader>
             <CardContent className="flex flex-col lg:p-4 lg:pt-0 xl:p-6 xl:pt-0 2xl:p-8 2xl:pt-0 4xl:p-12 4xl:pt-0">
-              <span className="font-normal tracking-wider text-foreground md:text-sm lg:py-4  lg:text-[.5rem] lg:leading-3 xl:py-5 xl:text-xs xl:leading-5  2xl:py-6 4xl:py-8 4xl:text-lg">
+              <span className="pb-5 text-xs font-normal tracking-wider text-foreground md:text-sm lg:py-4  lg:text-[.5rem] lg:leading-3 xl:py-5 xl:text-xs xl:leading-5  2xl:py-6 4xl:py-8 4xl:text-lg">
                 Quickly generate AI images with our powerful AI tools
               </span>
-              <Button className="border border-separator bg-button md:h-9 md:w-6/12 md:rounded-lg md:max-lg:mt-5 lg:h-8 lg:w-2/3 lg:rounded-full xl:h-10 4xl:h-14">
+              <Button className="h-9 w-6/12 rounded-lg border border-separator bg-button md:max-lg:mt-5 lg:h-8 lg:w-2/3 lg:rounded-full xl:h-10 4xl:h-14">
                 <span className="font-normal text-foreground md:text-xs lg:text-[.5rem] xl:text-xs 4xl:text-base">
                   Generate Image
                 </span>
@@ -71,22 +71,22 @@ const DashboardBody = () => {
         <Card className="rounded-3xl border-0 bg-gradient-to-bl from-[#7f04e3] to-[#ff006b] p-[1.5px] lg:col-span-1">
           <div className="h-full rounded-[calc(1.5rem-1.5px)] bg-card">
             <CardHeader className="flex flex-row items-center justify-between lg:p-4 lg:pb-0 xl:p-6 xl:pb-0 2xl:p-8 2xl:pb-0 4xl:p-12 4xl:pb-0">
-              <CardTitle className="flex flex-row items-center md:gap-x-5 lg:gap-x-3 xl:gap-x-5 2xl:gap-x-6 4xl:gap-x-8">
+              <CardTitle className="flex flex-row items-center gap-x-5 lg:gap-x-3 xl:gap-x-5 2xl:gap-x-6 4xl:gap-x-8">
                 <Image
                   src={generateImageSvg}
                   alt="generate an image"
-                  className="md:size-7 lg:size-6 xl:size-8 2xl:size-10 4xl:size-14"
+                  className="size-7 lg:size-6 xl:size-8 2xl:size-10 4xl:size-14"
                 />
-                <span className="text-logo font-medium md:text-xl lg:text-sm lg:leading-5 xl:text-lg 2xl:text-2xl 4xl:text-3xl">
+                <span className="text-logo text-xl font-medium lg:text-sm lg:leading-5 xl:text-lg 2xl:text-2xl 4xl:text-3xl">
                   Generate an Image
                 </span>
               </CardTitle>
             </CardHeader>
             <CardContent className="flex flex-col lg:p-4 lg:pt-0 xl:p-6 xl:pt-0 2xl:p-8 2xl:pt-0 4xl:p-12 4xl:pt-0">
-              <span className="font-normal tracking-wider text-foreground md:text-sm lg:py-4  lg:text-[.5rem] lg:leading-3 xl:py-5 xl:text-xs xl:leading-5  2xl:py-6 4xl:py-8 4xl:text-lg">
+              <span className="pb-5 text-xs font-normal tracking-wider text-foreground md:text-sm lg:py-4  lg:text-[.5rem] lg:leading-3 xl:py-5 xl:text-xs xl:leading-5  2xl:py-6 4xl:py-8 4xl:text-lg">
                 Quickly generate AI images with our powerful AI tools
               </span>
-              <Button className="border border-separator bg-button md:h-9 md:w-6/12 md:rounded-lg md:max-lg:mt-5 lg:h-8 lg:w-2/3 lg:rounded-full xl:h-10 4xl:h-14">
+              <Button className="h-9 w-6/12 rounded-lg border border-separator bg-button md:max-lg:mt-5 lg:h-8 lg:w-2/3 lg:rounded-full xl:h-10 4xl:h-14">
                 <span className="font-normal text-foreground md:text-xs lg:text-[.5rem] xl:text-xs 4xl:text-base">
                   Generate Image
                 </span>
@@ -97,22 +97,22 @@ const DashboardBody = () => {
         <Card className="rounded-3xl border-0 bg-gradient-to-bl from-[#7f04e3] to-[#ff006b] p-[1.5px] lg:col-span-1">
           <div className="h-full rounded-[calc(1.5rem-1.5px)] bg-card">
             <CardHeader className="flex flex-row items-center justify-between lg:p-4 lg:pb-0 xl:p-6 xl:pb-0 2xl:p-8 2xl:pb-0 4xl:p-12 4xl:pb-0">
-              <CardTitle className="flex flex-row items-center md:gap-x-5 lg:gap-x-3 xl:gap-x-5 2xl:gap-x-6 4xl:gap-x-8">
+              <CardTitle className="flex flex-row items-center gap-x-5 lg:gap-x-3 xl:gap-x-5 2xl:gap-x-6 4xl:gap-x-8">
                 <Image
                   src={generateImageSvg}
                   alt="generate an image"
-                  className="md:size-7 lg:size-6 xl:size-8 2xl:size-10 4xl:size-14"
+                  className="size-7 lg:size-6 xl:size-8 2xl:size-10 4xl:size-14"
                 />
-                <span className="text-logo font-medium md:text-xl lg:text-sm lg:leading-5 xl:text-lg 2xl:text-2xl 4xl:text-3xl">
+                <span className="text-logo text-xl font-medium lg:text-sm lg:leading-5 xl:text-lg 2xl:text-2xl 4xl:text-3xl">
                   Generate an Image
                 </span>
               </CardTitle>
             </CardHeader>
             <CardContent className="flex flex-col lg:p-4 lg:pt-0 xl:p-6 xl:pt-0 2xl:p-8 2xl:pt-0 4xl:p-12 4xl:pt-0">
-              <span className="font-normal tracking-wider text-foreground md:text-sm lg:py-4  lg:text-[.5rem] lg:leading-3 xl:py-5 xl:text-xs xl:leading-5  2xl:py-6 4xl:py-8 4xl:text-lg">
+              <span className="pb-5 text-xs font-normal tracking-wider text-foreground md:text-sm lg:py-4  lg:text-[.5rem] lg:leading-3 xl:py-5 xl:text-xs xl:leading-5  2xl:py-6 4xl:py-8 4xl:text-lg">
                 Quickly generate AI images with our powerful AI tools
               </span>
-              <Button className="border border-separator bg-button md:h-9 md:w-6/12 md:rounded-lg md:max-lg:mt-5 lg:h-8 lg:w-2/3 lg:rounded-full xl:h-10 4xl:h-14">
+              <Button className="h-9 w-6/12 rounded-lg border border-separator bg-button md:max-lg:mt-5 lg:h-8 lg:w-2/3 lg:rounded-full xl:h-10 4xl:h-14">
                 <span className="font-normal text-foreground md:text-xs lg:text-[.5rem] xl:text-xs 4xl:text-base">
                   Generate Image
                 </span>
@@ -135,7 +135,7 @@ const DashboardBody = () => {
             <div className="flex flex-row items-center lg:gap-x-1 4xl:gap-x-4">
               <Button className="xl:rounded-xs gap-x-2 bg-gradient-to-bl from-[#7f04e3] to-[#ff006b] px-3 lg:h-10 xl:p-5 4xl:px-8 4xl:py-7">
                 <FolderDown className="text-logo size-6 lg:size-5 4xl:size-8" />
-                <span className="lg:text-xs xl:text-base 4xl:text-lg">Download</span>
+                <span className="hidden sm:block lg:text-xs xl:text-base 4xl:text-lg">Download</span>
               </Button>
               <Button className="hover:bg-hover bg-card lg:p-2 4xl:p-6">
                 <ChevronRight className="text-logo lg:size-6 4xl:size-10" />

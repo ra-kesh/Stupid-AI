@@ -12,71 +12,75 @@ const DashboardHero = () => {
     <div className="grid w-full grid-cols-1 py-8 lg:grid-cols-12 lg:gap-x-4 xl:gap-x-6 2xl:gap-x-10 4xl:gap-x-12">
       <div className="flex size-full flex-col lg:col-span-9">
         <div className="flex w-full items-center justify-between">
-          <h2 className="text-logo  font-bold tracking-wider md:text-[1.8rem] lg:text-2xl xl:text-4xl 2xl:text-[2.4rem] 4xl:text-5xl">
+          <h2 className="text-logo  text-[1.4rem] font-bold tracking-wider sm:text-[1.6rem] md:text-[1.8rem] lg:text-2xl xl:text-4xl 2xl:text-[2.4rem] 4xl:text-5xl">
             Welcome to CupidAI
           </h2>
           <div className="flex items-center space-x-2 ">
-            <div className="flex items-center justify-center rounded-full border border-separator bg-button md:size-8 xl:size-10 2xl:size-10 4xl:size-14">
-              <span className="text-foreground md:text-xs xl:text-sm 4xl:text-xl">+5</span>
+            <div className="hidden size-8 items-center justify-center rounded-full border border-separator bg-button  sm:flex md:size-8 xl:size-10 2xl:size-10 4xl:size-14">
+              <span className="text-foreground sm:text-xs xl:text-sm 4xl:text-xl">+5</span>
             </div>
 
-            <Button className="sm gap-x-2 rounded-full border border-separator bg-button md:h-8 lg:p-3 xl:h-10 4xl:h-14 4xl:px-6">
-              <ImagePlus className="md:size-4 xl:size-5 4xl:size-7" />
-              <span className="xl:tex-sm text-foreground md:text-xs  2xl:text-sm 4xl:text-lg"> Invite Member</span>
+            <Button className="h-8 gap-x-2 rounded-full border border-separator bg-button px-2 lg:p-3 xl:h-10 4xl:h-14 4xl:px-6">
+              <ImagePlus className="size-4 xl:size-5 4xl:size-7" />
+              <span className="hidden text-foreground sm:block md:text-xs xl:text-sm  2xl:text-sm 4xl:text-lg">
+                {" "}
+                Invite Member
+              </span>
             </Button>
           </div>
         </div>
         <div
-          className="flex w-full flex-row justify-between 
-          overflow-hidden sm:max-lg:flex-wrap md:max-lg:py-10 lg:mt-auto lg:space-x-2 3xl:space-x-3"
+          className="flex w-full flex-row gap-2 overflow-hidden 
+          py-5 max-lg:flex-wrap md:max-lg:py-10 lg:mt-auto xl:justify-between 3xl:space-x-3"
         >
-          <Button className="gap-x-2 rounded-full border border-separator bg-button md:h-10 lg:h-8 lg:p-3 xl:h-10 xl:px-5 4xl:h-14 4xl:gap-x-4 4xl:px-6 ">
+          <Button className="h-8 gap-x-2  rounded-full border border-separator bg-button max-md:px-4 md:h-10 lg:h-8 lg:p-3 xl:h-10 xl:px-5 4xl:h-14 4xl:gap-x-4 4xl:px-6 ">
             <Image
               src={generateImageSvg}
               alt="generate an image"
-              className="md:size-5 lg:size-3 xl:size-5  4xl:size-7"
+              className="size-4 md:size-5 lg:size-3 xl:size-5  4xl:size-7"
             />
-            <span className="font-normal text-foreground md:text-xs lg:text-[8px] xl:text-xs 2xl:text-sm 4xl:text-lg">
+            <span className="text-[6px] font-normal text-foreground  md:text-[8px] lg:text-[8px] xl:text-xs 2xl:text-sm 4xl:text-lg">
               Images Generated: 531
             </span>
           </Button>
-          <Button className="gap-x-2 rounded-full border border-separator bg-button md:h-10 lg:h-8 lg:p-3 xl:h-10 xl:px-5 4xl:h-14 4xl:gap-x-4 4xl:px-6 ">
+          <Button className="h-8 gap-x-2  rounded-full border border-separator bg-button max-md:px-4 md:h-10 lg:h-8 lg:p-3 xl:h-10 xl:px-5 4xl:h-14 4xl:gap-x-4 4xl:px-6 ">
             <Image
               src={generateImageSvg}
               alt="generate an image"
-              className="md:size-5 lg:size-3 xl:size-5  4xl:size-7"
+              className="size-4 md:size-5 lg:size-3 xl:size-5  4xl:size-7"
             />
-            <span className="font-normal text-foreground md:text-xs lg:text-[8px] xl:text-xs 2xl:text-sm 4xl:text-lg">
+            <span className="text-[6px] font-normal text-foreground sm:text-[8px] lg:text-[8px] xl:text-xs 2xl:text-sm 4xl:text-lg">
               Images Generated: 531
             </span>
           </Button>
-          <Button className="gap-x-2 rounded-full border border-separator bg-button md:h-10 lg:h-8 lg:p-3 xl:h-10 xl:px-5 4xl:h-14 4xl:gap-x-4 4xl:px-6 ">
+          <Button className="h-8 gap-x-2  rounded-full border border-separator bg-button max-md:px-4 md:h-10 lg:h-8 lg:p-3 xl:h-10 xl:px-5 4xl:h-14 4xl:gap-x-4 4xl:px-6 ">
             <Image
               src={generateImageSvg}
               alt="generate an image"
-              className="md:size-5 lg:size-3 xl:size-5  4xl:size-7"
+              className="size-4 md:size-5 lg:size-3 xl:size-5  4xl:size-7"
             />
-            <span className="font-normal text-foreground md:text-xs lg:text-[8px] xl:text-xs 2xl:text-sm 4xl:text-lg">
+            <span className="text-[6px] font-normal text-foreground sm:text-[8px] lg:text-[8px] xl:text-xs 2xl:text-sm 4xl:text-lg">
               Images Generated: 531
             </span>
           </Button>
-          <Button className="gap-x-2 rounded-full border border-separator bg-button md:h-10 lg:h-8 lg:p-3 xl:h-10 xl:px-5 4xl:h-14 4xl:gap-x-4 4xl:px-6 ">
+          <Button className="h-8 gap-x-2  rounded-full border border-separator bg-button max-md:px-4 md:h-10 lg:h-8 lg:p-3 xl:h-10 xl:px-5 4xl:h-14 4xl:gap-x-4 4xl:px-6 ">
             <Image
               src={generateImageSvg}
               alt="generate an image"
-              className="md:size-5 lg:size-3 xl:size-5  4xl:size-7"
+              className="size-4 md:size-5 lg:size-3 xl:size-5  4xl:size-7"
             />
-            <span className="font-normal text-foreground md:text-xs lg:text-[8px] xl:text-xs 2xl:text-sm 4xl:text-lg">
+            <span className="text-[6px] font-normal text-foreground sm:text-[8px] lg:text-[8px] xl:text-xs 2xl:text-sm 4xl:text-lg">
               Images Generated: 531
             </span>
           </Button>
-          <Button className="hidden gap-x-2 rounded-full border border-separator bg-button md:h-10 lg:h-8 lg:p-3 xl:h-10 xl:px-5 4xl:flex 4xl:h-14 4xl:gap-x-4 4xl:px-6 ">
+
+          <Button className="hidden h-8 gap-x-2  rounded-full border border-separator bg-button max-md:px-4 md:h-10 lg:h-8 lg:p-3 xl:h-10 xl:px-5 3xl:flex 4xl:h-14 4xl:gap-x-4 4xl:px-6">
             <Image
               src={generateImageSvg}
               alt="generate an image"
-              className="md:size-5 lg:size-3 xl:size-5  4xl:size-7"
+              className="size-4 md:size-5 lg:size-3 xl:size-5  4xl:size-7"
             />
-            <span className="font-normal text-foreground md:text-xs lg:text-[8px] xl:text-xs 2xl:text-sm 4xl:text-lg">
+            <span className="text-[6px] font-normal text-foreground sm:text-[8px] lg:text-[8px] xl:text-xs 2xl:text-sm 4xl:text-lg">
               Images Generated: 531
             </span>
           </Button>
