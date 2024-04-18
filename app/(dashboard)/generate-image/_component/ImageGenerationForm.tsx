@@ -15,13 +15,13 @@ const ImageGenerationForm = () => {
   const form = useForm()
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(() => {})} className="space-y-1 lg:space-y-2  2xl:space-y-3 4xl:space-y-7">
+      <form onSubmit={form.handleSubmit(() => {})} className="space-y-4 lg:space-y-2  2xl:space-y-3 4xl:space-y-7">
         <FormField
           control={form.control}
           name="text-prompt"
           render={({ field }) => (
-            <FormItem className="space-y-1 2xl:space-y-2 4xl:space-y-3">
-              <FormLabel className="text-xs 2xl:text-sm 4xl:text-xl">Text Prompt</FormLabel>
+            <FormItem className="space-y-2 lg:space-y-1 2xl:space-y-2 4xl:space-y-3">
+              <FormLabel className="text-sm lg:text-xs 2xl:text-sm 4xl:text-xl">Text Prompt</FormLabel>
               <FormControl>
                 <Textarea
                   placeholder="Enter your prompt"
@@ -38,8 +38,8 @@ const ImageGenerationForm = () => {
           control={form.control}
           name="sample-step"
           render={({ field }) => (
-            <FormItem className="space-y-1 2xl:space-y-2 4xl:space-y-3">
-              <FormLabel className="text-xs 2xl:text-sm 4xl:text-xl">Sampling Steps</FormLabel>
+            <FormItem className="space-y-2 lg:space-y-1 2xl:space-y-2 4xl:space-y-3">
+              <FormLabel className="text-sm lg:text-xs 2xl:text-sm 4xl:text-xl">Sampling Steps</FormLabel>
               <FormControl>
                 <Slider
                   defaultValue={[33]}
@@ -58,75 +58,75 @@ const ImageGenerationForm = () => {
           control={form.control}
           name="type"
           render={({ field }) => (
-            <FormItem className="space-y-1 2xl:space-y-2 4xl:space-y-3">
-              <FormLabel className="text-xs 2xl:text-sm 4xl:text-xl">Sampling Method</FormLabel>
+            <FormItem className="space-y-2 lg:space-y-1 2xl:space-y-2 4xl:space-y-3">
+              <FormLabel className="text-sm lg:text-xs 2xl:text-sm 4xl:text-xl">Sampling Method</FormLabel>
               <FormControl>
                 <RadioGroup
                   onValueChange={field.onChange}
                   defaultValue={field.value}
-                  className="flex flex-row flex-wrap xl:space-x-1 4xl:gap-x-3 "
+                  className="flex flex-row flex-wrap max-md:gap-3 xl:space-x-1 4xl:gap-x-3 "
                 >
-                  <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
+                  <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card px-3 py-2 lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
                     <FormControl>
                       <RadioGroupItem value="ddim" className="lg:size-3 xl:size-4  4xl:size-6 " />
                     </FormControl>
                     <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">DDIM</FormLabel>
                   </FormItem>
-                  <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
+                  <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card px-3 py-2 lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
                     <FormControl>
                       <RadioGroupItem value="ddim" className="lg:size-3 xl:size-4  4xl:size-6 " />
                     </FormControl>
                     <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">DDIM</FormLabel>
                   </FormItem>
-                  <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
+                  <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card px-3 py-2 lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
                     <FormControl>
                       <RadioGroupItem value="ddim" className="lg:size-3 xl:size-4  4xl:size-6 " />
                     </FormControl>
                     <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">DDIM</FormLabel>
                   </FormItem>
-                  <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
+                  <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card px-3 py-2 lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
                     <FormControl>
                       <RadioGroupItem value="ddim" className="lg:size-3 xl:size-4  4xl:size-6 " />
                     </FormControl>
                     <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">DDIM</FormLabel>
                   </FormItem>
-                  <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
+                  <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card px-3 py-2 lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
                     <FormControl>
                       <RadioGroupItem value="ddim" className="lg:size-3 xl:size-4  4xl:size-6 " />
                     </FormControl>
                     <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">DDIM</FormLabel>
                   </FormItem>
-                  <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
+                  <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card px-3 py-2 lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
                     <FormControl>
                       <RadioGroupItem value="ddim" className="lg:size-3 xl:size-4  4xl:size-6 " />
                     </FormControl>
                     <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">DDIM</FormLabel>
                   </FormItem>
-                  <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
+                  <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card px-3 py-2 lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
                     <FormControl>
                       <RadioGroupItem value="ddim" className="lg:size-3 xl:size-4  4xl:size-6 " />
                     </FormControl>
                     <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">DDIM</FormLabel>
                   </FormItem>
-                  <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
+                  <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card px-3 py-2 lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
                     <FormControl>
                       <RadioGroupItem value="ddim" className="lg:size-3 xl:size-4  4xl:size-6 " />
                     </FormControl>
                     <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">DDIM</FormLabel>
                   </FormItem>
-                  <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
+                  <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card px-3 py-2 lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
                     <FormControl>
                       <RadioGroupItem value="ddim" className="lg:size-3 xl:size-4  4xl:size-6 " />
                     </FormControl>
                     <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">DDIM</FormLabel>
                   </FormItem>
-                  <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
+                  <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card px-3 py-2 lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
                     <FormControl>
                       <RadioGroupItem value="ddim" className="lg:size-3 xl:size-4  4xl:size-6 " />
                     </FormControl>
                     <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">DDIM</FormLabel>
                   </FormItem>
-                  <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
+                  <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card px-3 py-2 lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
                     <FormControl>
                       <RadioGroupItem value="ddim" className="lg:size-3 xl:size-4  4xl:size-6 " />
                     </FormControl>
@@ -142,8 +142,8 @@ const ImageGenerationForm = () => {
           control={form.control}
           name="model"
           render={({ field }) => (
-            <FormItem className="space-y-1 2xl:space-y-2 4xl:space-y-3">
-              <FormLabel className="text-xs 2xl:text-sm 4xl:text-xl">Model Selector</FormLabel>
+            <FormItem className="space-y-2 lg:space-y-1 2xl:space-y-2 4xl:space-y-3">
+              <FormLabel className="text-sm lg:text-xs 2xl:text-sm 4xl:text-xl">Model Selector</FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
                   <SelectTrigger className="border-none bg-card text-xs  2xl:text-sm 4xl:h-14 4xl:text-xl">
@@ -166,8 +166,8 @@ const ImageGenerationForm = () => {
             control={form.control}
             name="width"
             render={({ field }) => (
-              <FormItem className="w-1/2 space-y-1 2xl:space-y-2 4xl:space-y-3">
-                <FormLabel className="text-xs 2xl:text-sm 4xl:text-xl">Width</FormLabel>
+              <FormItem className="w-1/2 space-y-2 lg:space-y-1 2xl:space-y-2 4xl:space-y-3">
+                <FormLabel className="text-sm lg:text-xs 2xl:text-sm 4xl:text-xl">Width</FormLabel>
                 <FormControl>
                   <Input placeholder="100" {...field} className="border-none bg-card  4xl:h-14" />
                 </FormControl>
@@ -180,8 +180,8 @@ const ImageGenerationForm = () => {
             control={form.control}
             name="height"
             render={({ field }) => (
-              <FormItem className="w-1/2 space-y-1 2xl:space-y-2 4xl:space-y-3">
-                <FormLabel className="text-xs 2xl:text-sm 4xl:text-xl">Height</FormLabel>
+              <FormItem className="w-1/2 space-y-2 lg:space-y-1 2xl:space-y-2 4xl:space-y-3">
+                <FormLabel className="text-sm lg:text-xs 2xl:text-sm 4xl:text-xl">Height</FormLabel>
                 <FormControl>
                   <Input placeholder="100" {...field} className="border-none bg-card  4xl:h-14" />
                 </FormControl>
@@ -195,8 +195,8 @@ const ImageGenerationForm = () => {
           control={form.control}
           name="cfg-scale"
           render={({ field }) => (
-            <FormItem className="space-y-1 2xl:space-y-2 4xl:space-y-3">
-              <FormLabel className="text-xs 2xl:text-sm 4xl:text-xl">CFG Scale</FormLabel>
+            <FormItem className="space-y-2 lg:space-y-1 2xl:space-y-2 4xl:space-y-3">
+              <FormLabel className="text-sm lg:text-xs 2xl:text-sm 4xl:text-xl">CFG Scale</FormLabel>
               <FormControl>
                 <Slider
                   defaultValue={[33]}
@@ -216,8 +216,8 @@ const ImageGenerationForm = () => {
             control={form.control}
             name="batch-size"
             render={({ field }) => (
-              <FormItem className="w-1/2 space-y-1 2xl:space-y-2 4xl:space-y-3 ">
-                <FormLabel className="text-xs 2xl:text-sm 4xl:text-xl">Batch Size</FormLabel>
+              <FormItem className="w-1/2 space-y-2 lg:space-y-1 2xl:space-y-2 4xl:space-y-3">
+                <FormLabel className="text-sm lg:text-xs 2xl:text-sm 4xl:text-xl">Batch Size</FormLabel>
                 <FormControl>
                   <Slider
                     defaultValue={[33]}
@@ -236,8 +236,8 @@ const ImageGenerationForm = () => {
             control={form.control}
             name="batch-count"
             render={({ field }) => (
-              <FormItem className="w-1/2 space-y-1 2xl:space-y-2 4xl:space-y-3 ">
-                <FormLabel className="text-xs 2xl:text-sm 4xl:text-xl">Batch Count</FormLabel>
+              <FormItem className="w-1/2 space-y-2 lg:space-y-1 2xl:space-y-2 4xl:space-y-3 ">
+                <FormLabel className="text-sm lg:text-xs 2xl:text-sm 4xl:text-xl">Batch Count</FormLabel>
                 <FormControl>
                   <Slider
                     defaultValue={[33]}
@@ -257,8 +257,8 @@ const ImageGenerationForm = () => {
           control={form.control}
           name="denoise"
           render={({ field }) => (
-            <FormItem className="space-y-1 2xl:space-y-2 4xl:space-y-3">
-              <FormLabel className="text-xs 2xl:text-sm 4xl:text-xl">Denoise</FormLabel>
+            <FormItem className="space-y-2 lg:space-y-1 2xl:space-y-2 4xl:space-y-3">
+              <FormLabel className="text-sm lg:text-xs 2xl:text-sm 4xl:text-xl">Denoise</FormLabel>
               <FormControl>
                 <Slider
                   defaultValue={[33]}
@@ -273,7 +273,7 @@ const ImageGenerationForm = () => {
           )}
         />
 
-        <div className="flex lg:space-x-3 lg:py-4 2xl:py-6  4xl:space-x-6 4xl:py-6">
+        <div className="flex space-x-3 py-4 2xl:py-6  4xl:space-x-6 4xl:py-6">
           <Button className=" bg-gradient-to-bl from-[#7f04e3] to-[#ff006b] lg:rounded-xl lg:text-xs xl:px-8 xl:py-5 xl:text-sm 4xl:h-20 4xl:rounded-3xl 4xl:px-20 4xl:text-xl ">
             Generate
           </Button>
