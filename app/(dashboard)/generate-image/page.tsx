@@ -1,6 +1,7 @@
 import React from "react"
 
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
+import { ScrollArea } from "@/components/ui/scroll-area"
 
 import HistoryTable from "./_component/HistoryTable"
 import ImageGenerationForm from "./_component/ImageGenerationForm"
@@ -14,11 +15,13 @@ const GenerateImage = () => {
         <CardHeader className="px-0 text-lg font-medium lg:py-2 xl:py-3 xl:text-2xl 2xl:py-4 4xl:py-6 4xl:text-4xl">
           AI Image Generation
         </CardHeader>
-        <CardContent className=" rounded-xl bg-form lg:p-3 lg:py-2  xl:p-4 xl:py-3 2xl:p-6 4xl:rounded-3xl 4xl:p-10">
+        <CardContent className=" rounded-xl bg-form p-6 lg:p-3 lg:py-2  xl:p-4 xl:py-3 2xl:p-6 4xl:rounded-3xl 4xl:p-10">
           <ImageGenerationForm />
         </CardContent>
       </Card>
-      <HistoryTable />
+      <div className="lg:col-span-12">
+        <HistoryTable />
+      </div>
     </div>
   )
 }

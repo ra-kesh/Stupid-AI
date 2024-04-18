@@ -16,13 +16,13 @@ const DeepFakeForm = () => {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(() => {})} className="space-y-1 lg:space-y-2  2xl:space-y-3 4xl:space-y-7">
+      <form onSubmit={form.handleSubmit(() => {})} className="space-y-4 lg:space-y-2  2xl:space-y-3 4xl:space-y-7">
         <FormField
           control={form.control}
           name="source-files"
           render={({ field }) => (
-            <FormItem className="space-y-1 2xl:space-y-2 4xl:space-y-3">
-              <FormLabel className="text-xs 2xl:text-sm 4xl:text-xl">Source File(s)</FormLabel>
+            <FormItem className="space-y-2 lg:space-y-1 2xl:space-y-2 4xl:space-y-3">
+              <FormLabel className="text-sm lg:text-xs 2xl:text-sm 4xl:text-xl">Source File(s)</FormLabel>
               <FormControl>
                 <FileUploader
                   value={field.value}
@@ -43,8 +43,8 @@ const DeepFakeForm = () => {
           control={form.control}
           name="target-files"
           render={({ field }) => (
-            <FormItem className="space-y-1 2xl:space-y-2 4xl:space-y-3">
-              <FormLabel className="text-xs 2xl:text-sm 4xl:text-xl">Target File(s)</FormLabel>
+            <FormItem className="space-y-2 lg:space-y-1 2xl:space-y-2 4xl:space-y-3">
+              <FormLabel className="text-sm lg:text-xs 2xl:text-sm 4xl:text-xl">Target File(s)</FormLabel>
               <FormControl>
                 <FileUploader
                   value={field.value}
@@ -65,8 +65,8 @@ const DeepFakeForm = () => {
           control={form.control}
           name="face-to-swap"
           render={({ field }) => (
-            <FormItem className="space-y-1 2xl:space-y-2 4xl:space-y-3">
-              <FormLabel className="text-xs 2xl:text-sm 4xl:text-xl">Model Selector</FormLabel>
+            <FormItem className="space-y-2 lg:space-y-1 2xl:space-y-2 4xl:space-y-3">
+              <FormLabel className="text-sm lg:text-xs 2xl:text-sm 4xl:text-xl">Model Selector</FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
                   <SelectTrigger className="border-none bg-card text-xs  2xl:text-sm 4xl:h-14 4xl:text-xl">
@@ -86,8 +86,8 @@ const DeepFakeForm = () => {
           control={form.control}
           name="face-simplicity"
           render={({ field }) => (
-            <FormItem className="space-y-1 2xl:space-y-2 4xl:space-y-3">
-              <FormLabel className="text-xs 2xl:text-sm 4xl:text-xl">Max. Face Simplicity</FormLabel>
+            <FormItem className="space-y-2 lg:space-y-1 2xl:space-y-2 4xl:space-y-3">
+              <FormLabel className="text-sm lg:text-xs 2xl:text-sm 4xl:text-xl">Max. Face Simplicity</FormLabel>
               <FormControl>
                 <Slider
                   defaultValue={[33]}
@@ -106,8 +106,8 @@ const DeepFakeForm = () => {
           control={form.control}
           name="post-processor"
           render={({ field }) => (
-            <FormItem className="space-y-1 2xl:space-y-2 4xl:space-y-3">
-              <FormLabel className="text-xs 2xl:text-sm 4xl:text-xl">Post Processor</FormLabel>
+            <FormItem className="space-y-2 lg:space-y-1 2xl:space-y-2 4xl:space-y-3">
+              <FormLabel className="text-sm lg:text-xs 2xl:text-sm 4xl:text-xl">Post Processor</FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
                   <SelectTrigger className="border-none bg-card text-xs  2xl:text-sm 4xl:h-14 4xl:text-xl">
@@ -128,8 +128,8 @@ const DeepFakeForm = () => {
           control={form.control}
           name="image-blend-ratio"
           render={({ field }) => (
-            <FormItem className="space-y-1 2xl:space-y-2 4xl:space-y-3">
-              <FormLabel className="text-xs 2xl:text-sm 4xl:text-xl">Image Blend Ratio</FormLabel>
+            <FormItem className="space-y-2 lg:space-y-1 2xl:space-y-2 4xl:space-y-3">
+              <FormLabel className="text-sm lg:text-xs 2xl:text-sm 4xl:text-xl">Image Blend Ratio</FormLabel>
               <FormControl>
                 <Slider
                   defaultValue={[33]}
@@ -145,8 +145,8 @@ const DeepFakeForm = () => {
           )}
         />
 
-        <div className="flex lg:space-x-3 lg:py-4 2xl:py-6  4xl:space-x-6 4xl:py-6">
-          <Button className=" bg-gradient-to-bl from-[#7f04e3] to-[#ff006b] lg:rounded-xl lg:text-xs xl:px-8 xl:py-5 xl:text-sm 4xl:h-20 4xl:rounded-3xl 4xl:px-20 4xl:text-lg ">
+        <div className="flex py-4 lg:space-x-3 2xl:py-6  4xl:space-x-6 4xl:py-6">
+          <Button className=" bg-gradient-to-bl from-[#7f04e3] to-[#ff006b] px-6 lg:rounded-xl lg:text-xs xl:px-8 xl:py-5 xl:text-sm 4xl:h-20 4xl:rounded-3xl 4xl:px-20 4xl:text-lg ">
             Generate
           </Button>
         </div>

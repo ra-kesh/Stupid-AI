@@ -15,15 +15,17 @@ const ImageEditingForm = () => {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(() => {})}
-        className="grid  space-y-1 lg:space-y-2 lg:p-4 2xl:space-y-3 2xl:p-5 4xl:space-y-7 4xl:p-8"
+        className="grid  p-6 lg:space-y-2 lg:p-4 2xl:space-y-3 2xl:p-5 4xl:space-y-7 4xl:p-8"
       >
-        <div className="grid gap-x-4 lg:grid-cols-2 xl:grid-cols-3 2xl:gap-y-4">
+        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3 2xl:gap-y-4">
           <FormField
             control={form.control}
             name="width"
             render={({ field }) => (
-              <FormItem className="space-y-1 2xl:space-y-2 4xl:space-y-3">
-                <FormLabel className="text-xs text-muted-foreground 2xl:text-sm 4xl:text-xl">Model Selector</FormLabel>
+              <FormItem className="space-y-2 lg:space-y-1 2xl:space-y-2 4xl:space-y-3">
+                <FormLabel className=" text-sm text-muted-foreground lg:text-xs 2xl:text-sm 4xl:text-xl">
+                  Model Selector
+                </FormLabel>
                 <Select onValueChange={field.onChange} defaultValue={field.value}>
                   <FormControl>
                     <SelectTrigger className="text-mutef border-none  bg-form  text-xs 2xl:text-sm 4xl:h-14 4xl:text-xl">
@@ -45,8 +47,10 @@ const ImageEditingForm = () => {
             control={form.control}
             name="width"
             render={({ field }) => (
-              <FormItem className="space-y-1 2xl:space-y-2 4xl:space-y-3">
-                <FormLabel className="text-xs text-muted-foreground 2xl:text-sm 4xl:text-xl">Model Selector</FormLabel>
+              <FormItem className="space-y-2 lg:space-y-1 2xl:space-y-2 4xl:space-y-3">
+                <FormLabel className=" text-sm text-muted-foreground lg:text-xs 2xl:text-sm 4xl:text-xl">
+                  Model Selector
+                </FormLabel>
                 <Select onValueChange={field.onChange} defaultValue={field.value}>
                   <FormControl>
                     <SelectTrigger className="border-none bg-form  text-xs  2xl:text-sm 4xl:h-14 4xl:text-xl">
@@ -68,8 +72,10 @@ const ImageEditingForm = () => {
             control={form.control}
             name="width"
             render={({ field }) => (
-              <FormItem className="space-y-1 2xl:space-y-2 4xl:space-y-3">
-                <FormLabel className="text-xs text-muted-foreground 2xl:text-sm 4xl:text-xl">Model Selector</FormLabel>
+              <FormItem className="space-y-2 lg:space-y-1 2xl:space-y-2 4xl:space-y-3">
+                <FormLabel className=" text-sm text-muted-foreground lg:text-xs 2xl:text-sm 4xl:text-xl">
+                  Model Selector
+                </FormLabel>
                 <Select onValueChange={field.onChange} defaultValue={field.value}>
                   <FormControl>
                     <SelectTrigger className="border-none bg-form  text-xs  2xl:text-sm 4xl:h-14 4xl:text-xl">
@@ -91,8 +97,10 @@ const ImageEditingForm = () => {
             control={form.control}
             name="width"
             render={({ field }) => (
-              <FormItem className="space-y-1 2xl:space-y-2 4xl:space-y-3">
-                <FormLabel className="text-xs text-muted-foreground 2xl:text-sm 4xl:text-xl">Model Selector</FormLabel>
+              <FormItem className="space-y-2 lg:space-y-1 2xl:space-y-2 4xl:space-y-3">
+                <FormLabel className=" text-sm text-muted-foreground lg:text-xs 2xl:text-sm 4xl:text-xl">
+                  Model Selector
+                </FormLabel>
                 <Select onValueChange={field.onChange} defaultValue={field.value}>
                   <FormControl>
                     <SelectTrigger className="border-none bg-form  text-xs  2xl:text-sm 4xl:h-14 4xl:text-xl">
@@ -114,8 +122,10 @@ const ImageEditingForm = () => {
             control={form.control}
             name="width"
             render={({ field }) => (
-              <FormItem className="space-y-1 2xl:space-y-2 4xl:space-y-3">
-                <FormLabel className="text-xs text-muted-foreground 2xl:text-sm 4xl:text-xl">Model Selector</FormLabel>
+              <FormItem className="space-y-2 lg:space-y-1 2xl:space-y-2 4xl:space-y-3">
+                <FormLabel className=" text-sm text-muted-foreground lg:text-xs 2xl:text-sm 4xl:text-xl">
+                  Model Selector
+                </FormLabel>
                 <Select onValueChange={field.onChange} defaultValue={field.value}>
                   <FormControl>
                     <SelectTrigger className="border-none bg-form  text-xs  2xl:text-sm 4xl:h-14 4xl:text-xl">
@@ -137,8 +147,10 @@ const ImageEditingForm = () => {
             control={form.control}
             name="width"
             render={({ field }) => (
-              <FormItem className="space-y-1 2xl:space-y-2 4xl:space-y-3">
-                <FormLabel className="text-xs text-muted-foreground 2xl:text-sm 4xl:text-xl">Model Selector</FormLabel>
+              <FormItem className="space-y-2 lg:space-y-1 2xl:space-y-2 4xl:space-y-3">
+                <FormLabel className=" text-sm text-muted-foreground lg:text-xs 2xl:text-sm 4xl:text-xl">
+                  Model Selector
+                </FormLabel>
                 <Select onValueChange={field.onChange} defaultValue={field.value}>
                   <FormControl>
                     <SelectTrigger className="border-none bg-form  text-xs  2xl:text-sm 4xl:h-14 4xl:text-xl">
@@ -160,8 +172,10 @@ const ImageEditingForm = () => {
             control={form.control}
             name="width"
             render={({ field }) => (
-              <FormItem className="space-y-1 2xl:space-y-2 4xl:space-y-3">
-                <FormLabel className="text-xs text-muted-foreground 2xl:text-sm 4xl:text-xl">Model Selector</FormLabel>
+              <FormItem className="space-y-2 lg:space-y-1 2xl:space-y-2 4xl:space-y-3">
+                <FormLabel className=" text-sm text-muted-foreground lg:text-xs 2xl:text-sm 4xl:text-xl">
+                  Model Selector
+                </FormLabel>
                 <Select onValueChange={field.onChange} defaultValue={field.value}>
                   <FormControl>
                     <SelectTrigger className="border-none bg-form  text-xs  2xl:text-sm 4xl:h-14 4xl:text-xl">

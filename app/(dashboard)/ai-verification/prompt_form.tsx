@@ -17,13 +17,13 @@ const TextPromptForm = () => {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(() => {})}
-        className="space-y-1 lg:col-span-7 lg:space-y-2  xl:col-span-8 2xl:space-y-3 4xl:space-y-7"
+        className="space-y-4 lg:col-span-7 lg:space-y-2  xl:col-span-8 2xl:space-y-3 4xl:space-y-7"
       >
         <FormField
           control={form.control}
           name="text-prompt"
           render={({ field }) => (
-            <FormItem className=" space-y-1 2xl:space-y-2 4xl:space-y-3">
+            <FormItem className="space-y-2 lg:space-y-1 2xl:space-y-2 4xl:space-y-3">
               <FormLabel className="text-muted-foreground lg:text-[9px] xl:text-xs 2xl:text-sm 4xl:text-xl ">
                 {" "}
                 Create ai image from text prompt{" "}
@@ -41,7 +41,7 @@ const TextPromptForm = () => {
           )}
         />
 
-        <div className="flex lg:space-x-3 lg:py-4   4xl:space-x-6 4xl:py-6">
+        <div className="flex space-x-3 py-4   4xl:space-x-6 4xl:py-6">
           <Button className=" bg-gradient-to-bl from-[#7f04e3] to-[#ff006b] lg:rounded-xl lg:text-xs xl:px-8 xl:py-5 xl:text-sm 4xl:h-20 4xl:rounded-3xl 4xl:px-14 4xl:text-xl ">
             Generate
           </Button>
@@ -56,7 +56,7 @@ const TextPromptForm = () => {
         <Separator className="bg-separator 2xl:h-[2px]" />
         <Accordion type="single" collapsible>
           <AccordionItem value="item-1" className="border-none">
-            <AccordionTrigger className="rounded-xl bg-card lg:p-4 2xl:p-5 4xl:p-8 4xl:text-2xl">
+            <AccordionTrigger className="rounded-xl bg-card p-6 lg:p-4 2xl:p-5 4xl:p-8 4xl:text-2xl">
               Image Editing Settings
             </AccordionTrigger>
             <AccordionContent className="rounded-b-xl bg-card">

@@ -26,10 +26,10 @@ const Preview = () => {
       <CardContent className=" w-full px-0 ">
         {selectedImage.url ? (
           <div className="space-y-2">
-            <div className="mx-auto rounded-t-lg bg-form lg:p-3 xl:p-4 4xl:rounded-t-3xl 4xl:p-10">
+            <div className="mx-auto rounded-t-lg bg-form p-4 sm:p-8 md:p-6 lg:p-3 xl:p-4 4xl:rounded-t-3xl 4xl:p-10">
               <img src={selectedImage.url} alt="selected image " className="w-full rounded-t-lg" />
-              <div className="flex w-full justify-center lg:pt-6 4xl:pt-10">
-                <Button className=" m-auto bg-gradient-to-bl from-[#7f04e3] to-[#ff006b] lg:rounded-xl lg:px-8  2xl:h-12 2xl:px-16 4xl:w-1/5 4xl:rounded-3xl 4xl:py-8 4xl:text-xl ">
+              <div className="flex w-full justify-center pt-6 4xl:pt-10">
+                <Button className=" m-auto bg-gradient-to-bl from-[#7f04e3] to-[#ff006b] px-5 md:px-8 lg:rounded-xl  2xl:h-12 2xl:px-16 4xl:w-1/5 4xl:rounded-3xl 4xl:py-8 4xl:text-xl ">
                   Download
                 </Button>
               </div>

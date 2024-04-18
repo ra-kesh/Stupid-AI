@@ -16,7 +16,7 @@ const SettingsForm = () => {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(() => {})}
-        className="grid  space-y-1 lg:space-y-2 lg:p-4 2xl:space-y-3 2xl:p-5 4xl:space-y-7"
+        className="grid  space-y-1 p-6 lg:space-y-2 lg:p-4 2xl:space-y-3 2xl:p-5 4xl:space-y-7"
       >
         <div className="flex flex-row gap-x-4 ">
           <FormField
