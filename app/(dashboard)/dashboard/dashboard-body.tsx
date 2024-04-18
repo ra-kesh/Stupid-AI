@@ -121,7 +121,7 @@ const DashboardBody = () => {
           </div>
         </Card>
       </div>
-      <div className="grid gap-4 lg:grid-cols-7 lg:gap-x-4 xl:gap-x-6 2xl:gap-x-14 4xl:gap-x-20 ">
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-7 lg:gap-x-4 xl:gap-x-6 2xl:gap-x-14 4xl:gap-x-20 ">
         <Card className="border-0 bg-inherit lg:col-span-5">
           <CardHeader className="flex flex-row items-center justify-between px-0">
             <div className="flex flex-row items-center lg:gap-x-1 4xl:gap-x-4">
@@ -194,10 +194,10 @@ const DashboardBody = () => {
             News
           </CardTitle>
           <CardContent className="p-0">
-            <Accordion type="single" collapsible className="w-full  text-xs md:space-y-2 4xl:text-sm">
+            <Accordion type="single" collapsible className="w-full  space-y-2 text-xs 4xl:text-sm">
               <AccordionItem
                 value="item-1 "
-                className="border-none bg-card px-6 md:rounded-lg  lg:rounded-3xl lg:py-1 4xl:py-2"
+                className="rounded-lg border-none bg-card px-6  lg:rounded-3xl lg:py-1 4xl:py-2"
               >
                 <AccordionTrigger className="text-logo font-bold leading-5 lg:text-xs xl:text-sm">
                   NEWS WEEK 32
@@ -209,7 +209,7 @@ const DashboardBody = () => {
               </AccordionItem>
               <AccordionItem
                 value="item-1 "
-                className="border-none bg-card px-6 md:rounded-lg  lg:rounded-3xl lg:py-1 4xl:py-2"
+                className="rounded-lg border-none bg-card px-6 lg:rounded-3xl lg:py-1 4xl:py-2"
               >
                 <AccordionTrigger className="text-logo font-bold leading-5 lg:text-xs xl:text-sm">
                   NEWS WEEK 32
@@ -221,7 +221,7 @@ const DashboardBody = () => {
               </AccordionItem>
               <AccordionItem
                 value="item-1 "
-                className="border-none bg-card px-6 md:rounded-lg  lg:rounded-3xl lg:py-1 4xl:py-2"
+                className="rounded-lg border-none bg-card px-6 lg:rounded-3xl lg:py-1 4xl:py-2"
               >
                 <AccordionTrigger className="text-logo font-bold leading-5 lg:text-xs xl:text-sm">
                   NEWS WEEK 32
@@ -233,7 +233,7 @@ const DashboardBody = () => {
               </AccordionItem>
               <AccordionItem
                 value="item-1 "
-                className="border-none bg-card px-6 md:rounded-lg  lg:rounded-3xl lg:py-1 4xl:py-2"
+                className="rounded-lg border-none bg-card px-6 lg:rounded-3xl lg:py-1 4xl:py-2"
               >
                 <AccordionTrigger className="text-logo font-bold leading-5 lg:text-xs xl:text-sm">
                   NEWS WEEK 32
@@ -245,7 +245,7 @@ const DashboardBody = () => {
               </AccordionItem>
               <AccordionItem
                 value="item-1 "
-                className="border-none bg-card px-6 md:rounded-lg  lg:rounded-3xl lg:py-1 4xl:py-2"
+                className="rounded-lg border-none bg-card px-6 lg:rounded-3xl lg:py-1 4xl:py-2"
               >
                 <AccordionTrigger className="text-logo font-bold leading-5 lg:text-xs xl:text-sm">
                   NEWS WEEK 32
@@ -257,7 +257,7 @@ const DashboardBody = () => {
               </AccordionItem>
               <AccordionItem
                 value="item-1 "
-                className="border-none bg-card px-6 md:rounded-lg  lg:rounded-3xl lg:py-1 4xl:py-2"
+                className="rounded-lg border-none bg-card px-6 lg:rounded-3xl lg:py-1 4xl:py-2"
               >
                 <AccordionTrigger className="text-logo font-bold leading-5 lg:text-xs xl:text-sm">
                   NEWS WEEK 32
@@ -269,7 +269,7 @@ const DashboardBody = () => {
               </AccordionItem>
               <AccordionItem
                 value="item-1 "
-                className="border-none bg-card px-6 md:rounded-lg  lg:rounded-3xl lg:py-1 4xl:py-2"
+                className="rounded-lg border-none bg-card px-6 lg:rounded-3xl lg:py-1 4xl:py-2"
               >
                 <AccordionTrigger className="text-logo font-bold leading-5 lg:text-xs xl:text-sm">
                   NEWS WEEK 32
