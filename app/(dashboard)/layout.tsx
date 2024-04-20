@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { Menu } from "lucide-react"
+import { LogOut, Menu, Settings } from "lucide-react"
 
 import { dashboardConfig } from "@/config/dashboard"
 import { Button } from "@/components/ui/button"
@@ -11,6 +11,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
 import DashboardNav from "./_component/DashboardNav"
 import SidebarNav from "./_component/SidebarNav"
+import avatar from "/public/Ellipse 28.png"
 import logo from "/public/logo_v1.svg"
 
 interface DashboardLayoutProps {
@@ -62,6 +63,18 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
             <h2 className="text-logo font-light tracking-wider md:text-3xl xl:text-4xl 2xl:text-[2.5rem] 4xl:text-5xl ">
               Dashboard
             </h2>
+            <div className="flex items-center space-x-3">
+              <Button variant="secondary" size="icon" className="rounded-full">
+                <Image src={avatar} alt="generate an image" />
+                <span className="sr-only">Toggle user menu</span>
+              </Button>
+              <Button size="icon" className="rounded-full bg-card">
+                <Settings className="size-5" />
+              </Button>
+              <Button size="icon" className=" rounded-full bg-card">
+                <LogOut className="size-5" />
+              </Button>
+            </div>
           </div>
         </header>
         <Separator className="bg-separator lg:h-px 3xl:h-[2px]" />
