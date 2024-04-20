@@ -8,7 +8,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 
+import addReactionSvg from "/public/add_reaction.svg"
 import generateImageSvg from "/public/generate_image_v1.svg"
+import newReleasesSvg from "/public/new_releases.svg"
+import pageInfoSvg from "/public/page_info.svg"
 
 const DashboardBody = () => {
   return (
@@ -34,7 +37,7 @@ const DashboardBody = () => {
               <span className="pb-5 text-xs font-normal tracking-wider text-foreground md:text-sm lg:py-4  lg:text-[.5rem] lg:leading-3 xl:py-5 xl:text-xs xl:leading-5  2xl:py-6 4xl:py-8 4xl:text-lg">
                 Quickly generate AI images with our powerful AI tools
               </span>
-              <Button className="h-9 w-6/12 rounded-lg border border-separator bg-button md:max-lg:mt-5 lg:h-8 lg:w-2/3 lg:rounded-full xl:h-10 4xl:h-14">
+              <Button className="h-9 w-fit rounded-lg border border-separator bg-button md:max-lg:mt-5 lg:h-8 lg:w-2/3 lg:rounded-full xl:h-10 4xl:h-14">
                 <span className="font-normal text-foreground md:text-xs lg:text-[.5rem] xl:text-xs 4xl:text-base">
                   Generate Image
                 </span>
@@ -47,12 +50,12 @@ const DashboardBody = () => {
             <CardHeader className="flex flex-row items-center justify-between lg:p-4 lg:pb-0 xl:p-6 xl:pb-0 2xl:p-8 2xl:pb-0 4xl:p-12 4xl:pb-0">
               <CardTitle className="flex flex-row items-center gap-x-5 lg:gap-x-3 xl:gap-x-5 2xl:gap-x-6 4xl:gap-x-8">
                 <Image
-                  src={generateImageSvg}
+                  src={addReactionSvg}
                   alt="generate an image"
                   className="size-7 lg:size-6 xl:size-8 2xl:size-10 4xl:size-14"
                 />
                 <span className="text-logo text-xl font-medium lg:text-sm lg:leading-5 xl:text-lg 2xl:text-2xl 4xl:text-3xl">
-                  Generate an Image
+                  Generate a Deepfake
                 </span>
               </CardTitle>
             </CardHeader>
@@ -60,9 +63,9 @@ const DashboardBody = () => {
               <span className="pb-5 text-xs font-normal tracking-wider text-foreground md:text-sm lg:py-4  lg:text-[.5rem] lg:leading-3 xl:py-5 xl:text-xs xl:leading-5  2xl:py-6 4xl:py-8 4xl:text-lg">
                 Quickly generate AI images with our powerful AI tools
               </span>
-              <Button className="h-9 w-6/12 rounded-lg border border-separator bg-button md:max-lg:mt-5 lg:h-8 lg:w-2/3 lg:rounded-full xl:h-10 4xl:h-14">
+              <Button className="h-9 w-fit rounded-lg border border-separator bg-button md:max-lg:mt-5 lg:h-8 lg:w-2/3 lg:rounded-full xl:h-10 4xl:h-14">
                 <span className="font-normal text-foreground md:text-xs lg:text-[.5rem] xl:text-xs 4xl:text-base">
-                  Generate Image
+                  Generate Deepfake
                 </span>
               </Button>
             </CardContent>
@@ -73,12 +76,12 @@ const DashboardBody = () => {
             <CardHeader className="flex flex-row items-center justify-between lg:p-4 lg:pb-0 xl:p-6 xl:pb-0 2xl:p-8 2xl:pb-0 4xl:p-12 4xl:pb-0">
               <CardTitle className="flex flex-row items-center gap-x-5 lg:gap-x-3 xl:gap-x-5 2xl:gap-x-6 4xl:gap-x-8">
                 <Image
-                  src={generateImageSvg}
+                  src={newReleasesSvg}
                   alt="generate an image"
                   className="size-7 lg:size-6 xl:size-8 2xl:size-10 4xl:size-14"
                 />
                 <span className="text-logo text-xl font-medium lg:text-sm lg:leading-5 xl:text-lg 2xl:text-2xl 4xl:text-3xl">
-                  Generate an Image
+                  Use AI Verifications
                 </span>
               </CardTitle>
             </CardHeader>
@@ -86,9 +89,9 @@ const DashboardBody = () => {
               <span className="pb-5 text-xs font-normal tracking-wider text-foreground md:text-sm lg:py-4  lg:text-[.5rem] lg:leading-3 xl:py-5 xl:text-xs xl:leading-5  2xl:py-6 4xl:py-8 4xl:text-lg">
                 Quickly generate AI images with our powerful AI tools
               </span>
-              <Button className="h-9 w-6/12 rounded-lg border border-separator bg-button md:max-lg:mt-5 lg:h-8 lg:w-2/3 lg:rounded-full xl:h-10 4xl:h-14">
+              <Button className="h-9 w-fit rounded-lg border border-separator bg-button md:max-lg:mt-5 lg:h-8 lg:w-2/3 lg:rounded-full xl:h-10 4xl:h-14">
                 <span className="font-normal text-foreground md:text-xs lg:text-[.5rem] xl:text-xs 4xl:text-base">
-                  Generate Image
+                  AI Verifications
                 </span>
               </Button>
             </CardContent>
@@ -99,12 +102,12 @@ const DashboardBody = () => {
             <CardHeader className="flex flex-row items-center justify-between lg:p-4 lg:pb-0 xl:p-6 xl:pb-0 2xl:p-8 2xl:pb-0 4xl:p-12 4xl:pb-0">
               <CardTitle className="flex flex-row items-center gap-x-5 lg:gap-x-3 xl:gap-x-5 2xl:gap-x-6 4xl:gap-x-8">
                 <Image
-                  src={generateImageSvg}
+                  src={pageInfoSvg}
                   alt="generate an image"
                   className="size-7 lg:size-6 xl:size-8 2xl:size-10 4xl:size-14"
                 />
                 <span className="text-logo text-xl font-medium lg:text-sm lg:leading-5 xl:text-lg 2xl:text-2xl 4xl:text-3xl">
-                  Generate an Image
+                  Use Content Utilities
                 </span>
               </CardTitle>
             </CardHeader>
@@ -112,9 +115,9 @@ const DashboardBody = () => {
               <span className="pb-5 text-xs font-normal tracking-wider text-foreground md:text-sm lg:py-4  lg:text-[.5rem] lg:leading-3 xl:py-5 xl:text-xs xl:leading-5  2xl:py-6 4xl:py-8 4xl:text-lg">
                 Quickly generate AI images with our powerful AI tools
               </span>
-              <Button className="h-9 w-6/12 rounded-lg border border-separator bg-button md:max-lg:mt-5 lg:h-8 lg:w-2/3 lg:rounded-full xl:h-10 4xl:h-14">
+              <Button className="h-9 w-fit rounded-lg border border-separator bg-button md:max-lg:mt-5 lg:h-8 lg:w-2/3 lg:rounded-full xl:h-10 4xl:h-14">
                 <span className="font-normal text-foreground md:text-xs lg:text-[.5rem] xl:text-xs 4xl:text-base">
-                  Generate Image
+                  Content Utilities
                 </span>
               </Button>
             </CardContent>

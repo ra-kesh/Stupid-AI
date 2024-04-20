@@ -5,7 +5,11 @@ import { ArrowRight, ImagePlus } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
+import addReactionSvg from "/public/add_reaction.svg"
 import generateImageSvg from "/public/generate_image_v1.svg"
+import groupSvg from "/public/Group 11.svg"
+import newReleasesSvg from "/public/new_releases.svg"
+import pageInfoSvg from "/public/page_info.svg"
 
 const DashboardHero = () => {
   return (
@@ -31,57 +35,57 @@ const DashboardHero = () => {
         </div>
         <div
           className="flex w-full flex-row gap-2 overflow-hidden 
-          py-5 max-lg:flex-wrap md:max-lg:py-10 lg:mt-auto xl:justify-between 3xl:space-x-3"
+          pt-5 max-lg:flex-wrap md:max-lg:pt-10 lg:mt-auto xl:justify-between 3xl:space-x-3"
         >
-          <Button className="h-8 gap-x-2  rounded-full border border-separator bg-button max-md:px-4 md:h-10 lg:h-8 lg:p-3 xl:h-10 xl:px-5 4xl:h-14 4xl:gap-x-4 4xl:px-6 ">
+          <Button className="h-8 gap-x-2  rounded-full border border-separator bg-button max-md:px-4 md:h-10 lg:h-8 lg:p-3 xl:h-9 xl:px-5 4xl:h-14 4xl:gap-x-4 4xl:px-6 ">
             <Image
               src={generateImageSvg}
               alt="generate an image"
-              className="size-4 md:size-5 lg:size-3 xl:size-5  4xl:size-7"
+              className="size-4 md:size-5 lg:size-3 xl:size-4   4xl:size-7"
             />
             <span className="text-[6px] font-normal text-foreground  md:text-[8px] lg:text-[8px] xl:text-xs 2xl:text-sm 4xl:text-lg">
-              Images Generated: 531
+              Images generated: 531
             </span>
           </Button>
-          <Button className="h-8 gap-x-2  rounded-full border border-separator bg-button max-md:px-4 md:h-10 lg:h-8 lg:p-3 xl:h-10 xl:px-5 4xl:h-14 4xl:gap-x-4 4xl:px-6 ">
+          <Button className="h-8 gap-x-2  rounded-full border border-separator bg-button max-md:px-4 md:h-10 lg:h-8 lg:p-3 xl:h-9 xl:px-5 4xl:h-14 4xl:gap-x-4 4xl:px-6 ">
             <Image
-              src={generateImageSvg}
+              src={addReactionSvg}
               alt="generate an image"
-              className="size-4 md:size-5 lg:size-3 xl:size-5  4xl:size-7"
+              className="size-4 md:size-5 lg:size-3 xl:size-4   4xl:size-7"
             />
             <span className="text-[6px] font-normal text-foreground sm:text-[8px] lg:text-[8px] xl:text-xs 2xl:text-sm 4xl:text-lg">
-              Images Generated: 531
+              Deepfakes generated: 842
             </span>
           </Button>
-          <Button className="h-8 gap-x-2  rounded-full border border-separator bg-button max-md:px-4 md:h-10 lg:h-8 lg:p-3 xl:h-10 xl:px-5 4xl:h-14 4xl:gap-x-4 4xl:px-6 ">
+          <Button className="h-8 gap-x-2  rounded-full border border-separator bg-button max-md:px-4 md:h-10 lg:h-8 lg:p-3 xl:h-9 xl:px-5 4xl:h-14 4xl:gap-x-4 4xl:px-6 ">
             <Image
-              src={generateImageSvg}
+              src={newReleasesSvg}
               alt="generate an image"
-              className="size-4 md:size-5 lg:size-3 xl:size-5  4xl:size-7"
+              className="size-4 md:size-5 lg:size-3 xl:size-4   4xl:size-7"
             />
             <span className="text-[6px] font-normal text-foreground sm:text-[8px] lg:text-[8px] xl:text-xs 2xl:text-sm 4xl:text-lg">
-              Images Generated: 531
+              AI verifications generated: 141
             </span>
           </Button>
-          <Button className="h-8 gap-x-2  rounded-full border border-separator bg-button max-md:px-4 md:h-10 lg:h-8 lg:p-3 xl:h-10 xl:px-5 4xl:h-14 4xl:gap-x-4 4xl:px-6 ">
+          <Button className="h-8 gap-x-2  rounded-full border border-separator bg-button max-md:px-4 md:h-10 lg:h-8 lg:p-3 xl:h-9 xl:px-5 4xl:h-14 4xl:gap-x-4 4xl:px-6 ">
             <Image
-              src={generateImageSvg}
+              src={pageInfoSvg}
               alt="generate an image"
-              className="size-4 md:size-5 lg:size-3 xl:size-5  4xl:size-7"
+              className="size-4 md:size-5 lg:size-3 xl:size-4   4xl:size-7"
             />
             <span className="text-[6px] font-normal text-foreground sm:text-[8px] lg:text-[8px] xl:text-xs 2xl:text-sm 4xl:text-lg">
-              Images Generated: 531
+              Content utilities: 353
             </span>
           </Button>
 
-          <Button className="hidden h-8 gap-x-2  rounded-full border border-separator bg-button max-md:px-4 md:h-10 lg:h-8 lg:p-3 xl:h-10 xl:px-5 3xl:flex 4xl:h-14 4xl:gap-x-4 4xl:px-6">
+          <Button className="hidden h-8 gap-x-2  rounded-full border border-separator bg-button max-md:px-4 md:h-10 lg:h-8 lg:p-3 xl:h-9 xl:px-5 3xl:flex 4xl:h-14 4xl:gap-x-4 4xl:px-6">
             <Image
-              src={generateImageSvg}
+              src={groupSvg}
               alt="generate an image"
-              className="size-4 md:size-5 lg:size-3 xl:size-5  4xl:size-7"
+              className="size-4 md:size-5 lg:size-3 xl:size-4   4xl:size-7"
             />
             <span className="text-[6px] font-normal text-foreground sm:text-[8px] lg:text-[8px] xl:text-xs 2xl:text-sm 4xl:text-lg">
-              Images Generated: 531
+              People referred: 14
             </span>
           </Button>
         </div>
