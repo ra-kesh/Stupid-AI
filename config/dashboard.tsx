@@ -34,6 +34,6 @@ export const dashboardConfig: DashboardConfig = {
   ],
   account: [
     { name: "Billing", href: "/billing", icon: <Wallet className="size-6 lg:size-5 xl:size-7 3xl:size-8" /> },
-    { name: "Referrals", href: "/referals", icon: <UserPlus2 className="size-6 lg:size-5 xl:size-7 3xl:size-8" /> },
+    { name: "Referrals", href: "/referrals", icon: <UserPlus2 className="size-6 lg:size-5 xl:size-7 3xl:size-8" /> },
   ],
 }

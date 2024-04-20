@@ -4,8 +4,6 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 
-import HistoryTable from "../generate-image/_component/HistoryTable"
-
 const Billing = () => {
   return (
     <Card className=" bg-inherit lg:col-span-5">
