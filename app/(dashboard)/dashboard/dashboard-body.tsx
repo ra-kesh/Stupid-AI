@@ -270,18 +270,6 @@ const DashboardBody = () => {
                   sit amet finibus lacinia.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem
-                value="item-1 "
-                className="rounded-lg border-none bg-card px-6 lg:rounded-3xl lg:py-1 4xl:py-2"
-              >
-                <AccordionTrigger className="text-logo font-bold leading-5 lg:text-xs xl:text-sm">
-                  NEWS WEEK 32
-                </AccordionTrigger>
-                <AccordionContent className="text-logo  text-xs font-normal">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et lacinia eros. Donec scelerisque, dui
-                  sit amet finibus lacinia.
-                </AccordionContent>
-              </AccordionItem>
             </Accordion>
           </CardContent>
         </Card>
