@@ -1,7 +1,10 @@
 import React from "react"
 
-import { Card, CardContent, CardHeader } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 
+import AddAccountForm from "./AddAccount"
 import AiPreview from "./AiVerificationPreview"
 import VerificationPersons from "./verification-person"
 import VerificationForm from "./VerificationForm"
@@ -21,8 +24,21 @@ const AiVerification = () => {
       </div>
 
       <Card className="col-span-12 bg-inherit lg:col-span-5">
-        <CardHeader className="px-0 text-lg font-medium lg:py-2 xl:py-3 xl:text-2xl 2xl:py-4 4xl:py-6 4xl:text-4xl">
-          Manage Account
+        <CardHeader className="flex flex-row items-center justify-between px-0 text-lg font-medium lg:py-2 xl:py-3 xl:text-2xl 2xl:py-4 4xl:py-6 4xl:text-4xl">
+          <CardTitle className="">Manage Account</CardTitle>
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button variant="outline" className="w-fit bg-inherit">
+                Add Account
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="border-none bg-form">
+              <DialogHeader>
+                <DialogTitle>Add Account</DialogTitle>
+              </DialogHeader>
+              <AddAccountForm />
+            </DialogContent>
+          </Dialog>
         </CardHeader>
         <CardContent className="gap-4 rounded-2xl bg-form p-6 lg:p-3 xl:p-6  2xl:p-8 4xl:rounded-3xl 4xl:p-10">
           <VerificationPersons />
