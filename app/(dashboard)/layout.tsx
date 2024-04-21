@@ -3,11 +3,16 @@
 import Image from "next/image"
 import Link from "next/link"
 import { LogOut, Menu, Settings } from "lucide-react"
+import { useForm } from "react-hook-form"
 
 import { dashboardConfig } from "@/config/dashboard"
 import { Button } from "@/components/ui/button"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Separator } from "@/components/ui/separator"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { FileUploaderDashboard } from "@/components/file-uploader-dashboard"
 
 import DashboardNav from "./_component/DashboardNav"
 import SidebarNav from "./_component/SidebarNav"
@@ -19,6 +24,8 @@ interface DashboardLayoutProps {
 }
 
 export default function DashboardLayout({ children }: DashboardLayoutProps) {
+  const form = useForm()
+
   return (
     <div className=" grid min-h-svh w-full md:grid-cols-[80px_1fr] lg:grid-cols-[240px_1fr] xl:grid-cols-[260px_1fr] 2xl:grid-cols-[280px_1fr] 3xl:grid-cols-[300px_1fr] 4xl:grid-cols-[320px_1fr]">
       {/* sidebar starts */}
@@ -64,10 +71,84 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
               Dashboard
             </h2>
             <div className="flex items-center space-x-3">
-              <Button variant="secondary" size="icon" className="rounded-full">
-                <Image src={avatar} alt="generate an image" />
-                <span className="sr-only">Toggle user menu</span>
-              </Button>
+              <DropdownMenu>
+                <DropdownMenuTrigger>
+                  {" "}
+                  <Button asChild variant="secondary" size="icon" className=" rounded-full">
+                    <>
+                      <Image src={avatar} alt="generate an image" className="size-10" />
+                      <span className="sr-only">Toggle user menu</span>
+                    </>
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="h-auto border-none bg-form p-6">
+                  <Form {...form}>
+                    <form onSubmit={form.handleSubmit(() => {})} className="space-y-4">
+                      <FormField
+                        control={form.control}
+                        name="source-files"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel className="text-sm text-foreground lg:text-xs 2xl:text-sm 4xl:text-lg">
+                              Change Profile Picture
+                            </FormLabel>
+                            <FormControl>
+                              <FileUploaderDashboard
+                                value={field.value}
+                                onValueChange={field.onChange}
+                                maxFiles={4}
+                                maxSize={4 * 1024 * 1024}
+                                // progresses={progresses}
+                                // onUpload={uploadFiles}
+                                // disabled={isUploading}
+                                // className="h-24"
+                              />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+                      <FormField
+                        control={form.control}
+                        name="type"
+                        render={({ field }) => (
+                          <FormItem className="space-y-2 lg:space-y-1 2xl:space-y-2 4xl:space-y-3">
+                            <FormLabel className="text-sm text-foreground lg:text-xs 2xl:text-sm 4xl:text-xl">
+                              Switch Account
+                            </FormLabel>
+                            <FormControl>
+                              <RadioGroup
+                                onValueChange={field.onChange}
+                                defaultValue={field.value}
+                                className="flex flex-col  "
+                              >
+                                <FormItem className="flex items-center space-x-6  space-y-0 rounded-sm  px-3 py-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
+                                  <FormControl>
+                                    <RadioGroupItem value="1" className="bg-black lg:size-3  xl:size-4 4xl:size-6" />
+                                  </FormControl>
+                                  <FormLabel className="font-normal text-muted-foreground   lg:text-xs 2xl:text-sm 4xl:text-xl ">
+                                    Username134
+                                  </FormLabel>
+                                </FormItem>
+                                <FormItem className="flex items-center space-x-6 space-y-0 rounded-sm  px-3 py-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
+                                  <FormControl>
+                                    <RadioGroupItem value="2" className="bg-black lg:size-3  xl:size-4 4xl:size-6" />
+                                  </FormControl>
+                                  <FormLabel className="font-normal text-muted-foreground   lg:text-xs 2xl:text-sm 4xl:text-xl">
+                                    Username28945
+                                  </FormLabel>
+                                </FormItem>
+                              </RadioGroup>
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+                    </form>
+                  </Form>
+                </DropdownMenuContent>
+              </DropdownMenu>
+
               <Button size="icon" className="rounded-full bg-card">
                 <Settings className="size-5" />
               </Button>
