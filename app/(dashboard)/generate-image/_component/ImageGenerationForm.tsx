@@ -4,12 +4,15 @@ import React from "react"
 import { useForm } from "react-hook-form"
 
 import { Button } from "@/components/ui/button"
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Slider } from "@/components/ui/slider"
 import { Textarea } from "@/components/ui/textarea"
+
+import AdavancedSetting from "./AdavancedSetting"
 
 const ImageGenerationForm = () => {
   const form = useForm()
@@ -74,63 +77,63 @@ const ImageGenerationForm = () => {
                   </FormItem>
                   <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card px-3 py-2 lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
                     <FormControl>
-                      <RadioGroupItem value="ddim" className="lg:size-3 xl:size-4  4xl:size-6 " />
+                      <RadioGroupItem value="dpm" className="lg:size-3 xl:size-4  4xl:size-6 " />
                     </FormControl>
-                    <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">DDIM</FormLabel>
+                    <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">DPM+2M</FormLabel>
                   </FormItem>
                   <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card px-3 py-2 lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
                     <FormControl>
-                      <RadioGroupItem value="ddim" className="lg:size-3 xl:size-4  4xl:size-6 " />
+                      <RadioGroupItem value="plms" className="lg:size-3 xl:size-4  4xl:size-6 " />
                     </FormControl>
-                    <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">DDIM</FormLabel>
+                    <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">PLMS</FormLabel>
                   </FormItem>
                   <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card px-3 py-2 lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
                     <FormControl>
-                      <RadioGroupItem value="ddim" className="lg:size-3 xl:size-4  4xl:size-6 " />
+                      <RadioGroupItem value="dpm4" className="lg:size-3 xl:size-4  4xl:size-6 " />
                     </FormControl>
-                    <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">DDIM</FormLabel>
+                    <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">DPM4</FormLabel>
                   </FormItem>
                   <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card px-3 py-2 lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
                     <FormControl>
-                      <RadioGroupItem value="ddim" className="lg:size-3 xl:size-4  4xl:size-6 " />
+                      <RadioGroupItem value="lmd" className="lg:size-3 xl:size-4  4xl:size-6 " />
                     </FormControl>
-                    <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">DDIM</FormLabel>
+                    <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">LMS</FormLabel>
                   </FormItem>
                   <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card px-3 py-2 lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
                     <FormControl>
-                      <RadioGroupItem value="ddim" className="lg:size-3 xl:size-4  4xl:size-6 " />
+                      <RadioGroupItem value="euler" className="lg:size-3 xl:size-4  4xl:size-6 " />
                     </FormControl>
-                    <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">DDIM</FormLabel>
+                    <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">EULER</FormLabel>
                   </FormItem>
                   <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card px-3 py-2 lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
                     <FormControl>
-                      <RadioGroupItem value="ddim" className="lg:size-3 xl:size-4  4xl:size-6 " />
+                      <RadioGroupItem value="dpm2" className="lg:size-3 xl:size-4  4xl:size-6 " />
                     </FormControl>
-                    <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">DDIM</FormLabel>
+                    <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">DPM2</FormLabel>
                   </FormItem>
                   <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card px-3 py-2 lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
                     <FormControl>
-                      <RadioGroupItem value="ddim" className="lg:size-3 xl:size-4  4xl:size-6 " />
+                      <RadioGroupItem value="dpm+3m" className="lg:size-3 xl:size-4  4xl:size-6 " />
                     </FormControl>
-                    <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">DDIM</FormLabel>
+                    <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">DPM+3M</FormLabel>
                   </FormItem>
                   <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card px-3 py-2 lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
                     <FormControl>
-                      <RadioGroupItem value="ddim" className="lg:size-3 xl:size-4  4xl:size-6 " />
+                      <RadioGroupItem value="heun" className="lg:size-3 xl:size-4  4xl:size-6 " />
                     </FormControl>
-                    <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">DDIM</FormLabel>
+                    <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">HEUN</FormLabel>
                   </FormItem>
                   <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card px-3 py-2 lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
                     <FormControl>
-                      <RadioGroupItem value="ddim" className="lg:size-3 xl:size-4  4xl:size-6 " />
+                      <RadioGroupItem value="heun++2" className="lg:size-3 xl:size-4  4xl:size-6 " />
                     </FormControl>
-                    <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">DDIM</FormLabel>
+                    <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">HEUN++2</FormLabel>
                   </FormItem>
                   <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card px-3 py-2 lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
                     <FormControl>
-                      <RadioGroupItem value="ddim" className="lg:size-3 xl:size-4  4xl:size-6 " />
+                      <RadioGroupItem value="ddpm" className="lg:size-3 xl:size-4  4xl:size-6 " />
                     </FormControl>
-                    <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">DDIM</FormLabel>
+                    <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">DDPM</FormLabel>
                   </FormItem>
                 </RadioGroup>
               </FormControl>
@@ -277,12 +280,22 @@ const ImageGenerationForm = () => {
           <Button className=" bg-gradient-to-bl from-[#7f04e3] to-[#ff006b] lg:rounded-xl lg:text-xs xl:px-8 xl:py-5 xl:text-sm 4xl:h-20 4xl:rounded-3xl 4xl:px-20 4xl:text-xl ">
             Generate
           </Button>
-          <Button
-            variant={"outline"}
-            className=" bg-inherit lg:rounded-xl lg:px-3 lg:text-xs xl:px-6 xl:py-5 xl:text-sm 4xl:h-20 4xl:rounded-3xl 4xl:px-16 4xl:text-xl"
-          >
-            Advanced Setting
-          </Button>
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button
+                variant={"outline"}
+                className=" bg-inherit lg:rounded-xl lg:px-3 lg:text-xs xl:px-6 xl:py-5 xl:text-sm 4xl:h-20 4xl:rounded-3xl 4xl:px-16 4xl:text-xl"
+              >
+                Advanced Setting
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="border-none bg-form">
+              <DialogHeader>
+                <DialogTitle>Advanced Settings</DialogTitle>
+              </DialogHeader>
+              <AdavancedSetting />
+            </DialogContent>
+          </Dialog>
         </div>
       </form>
     </Form>

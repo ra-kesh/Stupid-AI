@@ -1,7 +1,6 @@
 import React from "react"
 
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
-import { ScrollArea } from "@/components/ui/scroll-area"
 
 import HistoryTable from "./_component/HistoryTable"
 import ImageGenerationForm from "./_component/ImageGenerationForm"
