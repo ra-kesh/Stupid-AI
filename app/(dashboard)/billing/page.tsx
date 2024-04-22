@@ -1,4 +1,6 @@
 import React from "react"
+import Link from "next/link"
+import { Check } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -22,7 +24,9 @@ const Billing = () => {
             <span className="text-xs 2xl:text-sm">
               Manage your personal content creation workflow effortlessly with our individual Plan
             </span>
-            <Button className="w-fit px-8 text-black">Get Started</Button>
+            <Link href="/billing/checkout">
+              <Button className="w-fit px-8 text-black hover:bg-primary hover:text-black">Get Started</Button>
+            </Link>
           </div>
           <div className="my-auto flex w-5/12 flex-col gap-4 px-6 py-10 2xl:p-10">
             <p className="text-4xl">£24.99</p>
@@ -31,24 +35,22 @@ const Billing = () => {
             <span className="text-xs 2xl:text-sm">Realistic AI Content Creation</span>
           </div>
         </div>
-        <div className="flex w-full rounded-xl border border-separator">
-          <div className="flex w-7/12 flex-col gap-4 rounded-l-xl border-r border-separator bg-form p-10">
-            <Button className="h-7 w-fit rounded-full border-none bg-inherit bg-gradient-to-bl from-[#7f04e3] to-[#ff006b] p-[2px]">
+        <div className="flex w-full rounded-xl border border-[#23E304]">
+          <div className="flex w-7/12 flex-col gap-4 rounded-l-xl border-r border-[#23E304] bg-form p-10">
+            <Button className="h-7 w-fit rounded-full border-none bg-[#23E304] p-[2px]">
               <div className="flex h-full items-center rounded-[calc(9999px-2px)] bg-card">
-                <span className="px-2 text-xs">For those starting out</span>
+                <span className="px-2 text-xs">Currently Active</span>
               </div>
             </Button>
-            <p className="text-3xl">Individual</p>
-            <span className="text-xs 2xl:text-sm">
-              Manage your personal content creation workflow effortlessly with our individual Plan
-            </span>
+            <p className="text-3xl">Entrepreneur</p>
+            <span className="text-xs 2xl:text-sm">Streamline your business with our Entrepreneur Package</span>
             <Button className="w-fit px-8 text-black">Get Started</Button>
           </div>
           <div className="my-auto flex w-5/12 flex-col gap-4 px-6 py-10 2xl:p-10">
-            <p className="text-4xl">£24.99</p>
-            <span className="text-xs 2xl:text-sm">Realistic AI Content Creation</span>
-            <span className="text-xs 2xl:text-sm">Realistic AI Content Creation</span>
-            <span className="text-xs 2xl:text-sm">Realistic AI Content Creation</span>
+            <p className="text-4xl">£99.99</p>
+            <span className="text-xs 2xl:text-sm">AI Image Editing Studio Access</span>
+            <span className="text-xs 2xl:text-sm">Team Management Access</span>
+            <span className="text-xs 2xl:text-sm">AI Model Training</span>
           </div>
         </div>
         <div className="flex w-full rounded-xl border border-separator">
