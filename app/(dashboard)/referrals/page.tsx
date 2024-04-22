@@ -3,9 +3,12 @@ import { Copy } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { Label } from "@/components/ui/label"
 import { Separator } from "@/components/ui/separator"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
+
+import RequestPayout from "./reauestpayout"
 
 const Referral = () => {
   return (
@@ -34,16 +37,27 @@ const Referral = () => {
         </CardHeader>
         <CardContent className="flex flex-col gap-5  rounded-lg bg-form px-8 py-10 2xl:gap-6 ">
           <div className="w-8/12 space-y-2">
-            <Label className=" text-xs text-muted-foreground">Copy your referral link</Label>
+            <Label className=" text-xs text-muted-foreground">Unpaid Earnings</Label>
             <div className="flex justify-between rounded-sm bg-card p-3">
-              <span className="text-xs 2xl:text-sm">https://cupid.tech/signup/ref/39010535</span>
-              <Copy className="size-4 2xl:size-5" />
+              <span className="text-xs 2xl:text-sm">£425.59</span>
             </div>
           </div>
           <span className="w-7/12 text-xs text-muted-foreground 2xl:w-6/12 2xl:text-sm">
-            Send this link to your friends. When they sign up using this link, you will earn a reward.
+            Text about the earnings goes here. Its best if you guys write this one, because I dont know.
           </span>
-          <Button className="w-fit bg-gradient-to-bl from-[#7f04e3] to-[#ff006b] px-8 text-white">Get Started</Button>
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button className="w-fit bg-gradient-to-bl from-[#7f04e3] to-[#ff006b] px-8 text-white">
+                Request Payout
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="max-w-3xl border-none bg-form">
+              <DialogHeader>
+                <DialogTitle>Withdraw your earnings</DialogTitle>
+              </DialogHeader>
+              <RequestPayout />
+            </DialogContent>
+          </Dialog>
         </CardContent>
       </Card>
 
