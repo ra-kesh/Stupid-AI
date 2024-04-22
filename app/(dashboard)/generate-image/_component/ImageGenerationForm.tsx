@@ -68,10 +68,11 @@ const ImageGenerationForm = () => {
                   onValueChange={field.onChange}
                   defaultValue={field.value}
                   className="flex flex-row flex-wrap max-md:gap-3 xl:space-x-1 4xl:gap-x-3 "
+                  value="ddim"
                 >
                   <FormItem className="flex items-center space-x-3 space-y-0 rounded-sm bg-card px-3 py-2 lg:space-x-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
                     <FormControl>
-                      <RadioGroupItem value="ddim" className="lg:size-3 xl:size-4  4xl:size-6 " />
+                      <RadioGroupItem value="ddim" className=" lg:size-3  xl:size-4 4xl:size-6" />
                     </FormControl>
                     <FormLabel className="font-normal lg:text-xs   2xl:text-sm 4xl:text-xl ">DDIM</FormLabel>
                   </FormItem>

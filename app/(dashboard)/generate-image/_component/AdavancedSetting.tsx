@@ -189,7 +189,7 @@ const AdavancedSetting = () => {
               )}
             />
           </div>
-          <FormField
+          {/* <FormField
             control={form.control}
             name="ipa-2"
             render={({ field }) => (
@@ -293,7 +293,7 @@ const AdavancedSetting = () => {
                 </FormItem>
               )}
             />
-          </div>
+          </div> */}
           {/* <FormField
             control={form.control}
             name="weight_type"
@@ -317,7 +317,7 @@ const AdavancedSetting = () => {
               </FormItem>
             )}
           /> */}
-          <div className="flex flex-row gap-x-4 ">
+          {/* <div className="flex flex-row gap-x-4 ">
             <FormField
               control={form.control}
               name="start"
@@ -358,7 +358,7 @@ const AdavancedSetting = () => {
                 </FormItem>
               )}
             />
-          </div>
+          </div> */}
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="refinement " className="rouned-md rounded-lg border-none bg-card  px-6 lg:py-1 4xl:py-2">

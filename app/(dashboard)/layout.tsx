@@ -121,6 +121,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
                                 onValueChange={field.onChange}
                                 defaultValue={field.value}
                                 className="flex flex-col  "
+                                value="1"
                               >
                                 <FormItem className="flex items-center space-x-6  space-y-0 rounded-sm  px-3 py-2 lg:px-2 lg:py-1 xl:px-3 xl:py-2 4xl:px-4 4xl:py-3 ">
                                   <FormControl>
